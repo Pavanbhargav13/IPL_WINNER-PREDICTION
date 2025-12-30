@@ -50,6 +50,11 @@ The model outputs **probability scores** for each team, indicating their likelih
 - Deploy as a web app using Streamlit
 
 ---
+## 📌 Notes
+- This project was developed and executed using Google Colab.
+- Due to data size constraints, datasets are not uploaded to GitHub.
+- Results are probabilistic and not deterministic predictions.
+---
 
 ## 👤 Author
 PAVAN BHARGAV MN
