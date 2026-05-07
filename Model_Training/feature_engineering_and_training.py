@@ -93,6 +93,10 @@ venue_stats = venue_stats.merge(avg_wickets, on='venue_name', how='left')
 np.random.seed(42)
 venue_stats['spin_wicket_pct_proxy'] = np.random.uniform(0.3, 0.6, size=len(venue_stats))
 
+# Save venue stats so the prediction script can use them without recomputing
+venue_stats.to_csv(os.path.join(data_dir, 'venue_stats.csv'), index=False)
+print("Saved venue stats to data/venue_stats.csv")
+
 summary_df['home_win'] = (summary_df['winner'] == summary_df['home_team']).astype(int)
 home_adv = summary_df.groupby(['season', 'home_team']).agg(
     home_matches=('id', 'count'),

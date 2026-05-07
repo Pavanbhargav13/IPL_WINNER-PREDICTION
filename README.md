@@ -98,6 +98,39 @@ This will:
 - Train a Random Forest classifier
 - Save the model to `models/ipl_rf_model.joblib`
 - Save the feature list to `models/feature_columns.json`
+- Save `data/venue_stats.csv` for inference use
+
+---
+
+## 🔮 Making Predictions
+
+**CLI mode** (quick one-off prediction):
+```bash
+python predict.py --home MI --away CSK --venue "Wankhede Stadium"
+```
+
+**Interactive mode** (guided prompts):
+```bash
+python predict.py
+```
+
+Sample output:
+```
+═══════════════════════════════════════════════════════
+  🏏  IPL MATCH PREDICTION
+═══════════════════════════════════════════════════════
+  📍 Venue : Wankhede Stadium, Mumbai
+  🏠 Home  : MI  vs  🚌 Away : CSK
+───────────────────────────────────────────────────────
+  MI      ████████████████████████░░░░░░░░░░░░░░░░  CSK
+   61.0%                                          39.0%
+───────────────────────────────────────────────────────
+  🏆  Predicted Winner : MI
+═══════════════════════════════════════════════════════
+```
+
+**Supported Teams:** MI, CSK, RCB, KKR, SRH, DC, RR, PBKS, GT, LSG  
+**Venue:** Partial name matching supported (e.g. `"Wankhede"` works)
 
 ---
 
@@ -117,7 +150,7 @@ This will:
 - [x] Team-level feature engineering
 - [x] Random Forest model training
 - [x] Model persistence (save/load)
-- [ ] Prediction script (input teams → output winner probability)
+- [x] Prediction script (CLI + interactive mode)
 - [ ] Model improvement (XGBoost, cross-validation, form features)
 - [ ] Web UI for live predictions
 
