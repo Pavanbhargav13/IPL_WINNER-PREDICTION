@@ -3,9 +3,11 @@ import numpy as np
 import os
 import json
 import joblib
-from sklearn.model_selection import train_test_split
+from datetime import datetime
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
+from xgboost import XGBClassifier
 
 print("Loading data...")
 # Data is in ../data relative to Model_Training
@@ -187,31 +189,96 @@ y = train_df['target']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-print("Training Random Forest Classifier...")
-rf = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42)
-rf.fit(X_train, y_train)
-
-y_pred = rf.predict(X_test)
-print("\n--- Model Evaluation ---")
-print("Accuracy:", accuracy_score(y_test, y_pred))
-print(classification_report(y_test, y_pred))
-
-importances = pd.Series(rf.feature_importances_, index=features).sort_values(ascending=False)
-print("\n--- Top 5 Important Features ---")
-print(importances.head(5))
-
-# ── Step 1: Persist the trained model and feature list ──────────────────────
+# ── Step 1 & 3: Train models, cross-validate, compare, save best ───────────────
 models_dir = os.path.join(os.path.dirname(__file__), '..', 'models')
 os.makedirs(models_dir, exist_ok=True)
 
-model_path = os.path.join(models_dir, 'ipl_rf_model.joblib')
-features_path = os.path.join(models_dir, 'feature_columns.json')
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
-joblib.dump(rf, model_path)
-print(f"\n✅ Model saved → {model_path}")
+# ―― Random Forest ――――――――――――――――――――――――――――――――――――――――――――――――――
+print("\nTraining Random Forest...")
+rf = RandomForestClassifier(n_estimators=200, max_depth=10, min_samples_leaf=2, random_state=42)
+rf.fit(X_train, y_train)
+
+rf_test_acc = accuracy_score(y_test, rf.predict(X_test))
+rf_cv_scores = cross_val_score(rf, X, y, cv=cv, scoring='accuracy')
+rf_cv_mean   = rf_cv_scores.mean()
+
+print(f"  Test Accuracy      : {rf_test_acc:.4f}")
+print(f"  5-Fold CV (mean)   : {rf_cv_mean:.4f}")
+print(f"  5-Fold CV (std)    : {rf_cv_scores.std():.4f}")
+print("\n  Classification Report (RF):")
+print(classification_report(y_test, rf.predict(X_test)))
+
+rf_importances = pd.Series(rf.feature_importances_, index=features).sort_values(ascending=False)
+print("  Top 5 Features (RF):")
+print(rf_importances.head(5).to_string())
+
+# ―― XGBoost ――――――――――――――――――――――――――――――――――――――――――――――――――
+print("\nTraining XGBoost...")
+xgb = XGBClassifier(
+    n_estimators=300,
+    max_depth=4,
+    learning_rate=0.05,
+    subsample=0.8,
+    colsample_bytree=0.8,
+    use_label_encoder=False,
+    eval_metric='logloss',
+    random_state=42,
+    verbosity=0
+)
+xgb.fit(X_train, y_train)
+
+xgb_test_acc  = accuracy_score(y_test, xgb.predict(X_test))
+xgb_cv_scores = cross_val_score(xgb, X, y, cv=cv, scoring='accuracy')
+xgb_cv_mean   = xgb_cv_scores.mean()
+
+print(f"  Test Accuracy      : {xgb_test_acc:.4f}")
+print(f"  5-Fold CV (mean)   : {xgb_cv_mean:.4f}")
+print(f"  5-Fold CV (std)    : {xgb_cv_scores.std():.4f}")
+print("\n  Classification Report (XGBoost):")
+print(classification_report(y_test, xgb.predict(X_test)))
+
+# ―― Pick the winner ―――――――――――――――――――――――――――――――――――――――――――――――――
+print("\n" + "="*55)
+print("  MODEL COMPARISON SUMMARY")
+print("="*55)
+print(f"  {'Model':<20} {'Test Acc':>10}  {'CV Mean':>10}")
+print(f"  {'-'*44}")
+print(f"  {'Random Forest':<20} {rf_test_acc:>10.4f}  {rf_cv_mean:>10.4f}")
+print(f"  {'XGBoost':<20} {xgb_test_acc:>10.4f}  {xgb_cv_mean:>10.4f}")
+print("="*55)
+
+if xgb_cv_mean >= rf_cv_mean:
+    best_model, best_name, best_cv = xgb, 'XGBoost',       xgb_cv_mean
+else:
+    best_model, best_name, best_cv = rf,  'RandomForest',  rf_cv_mean
+
+print(f"\n🏆 Best model: {best_name} (CV={best_cv:.4f})")
+
+# ―― Save artifacts ―――――――――――――――――――――――――――――――――――――――――――――――――
+model_path    = os.path.join(models_dir, 'ipl_rf_model.joblib')
+features_path = os.path.join(models_dir, 'feature_columns.json')
+meta_path     = os.path.join(models_dir, 'model_metadata.json')
+
+joblib.dump(best_model, model_path)
+print(f"\n✅ Model saved     → {model_path}")
 
 with open(features_path, 'w') as f:
     json.dump(features, f, indent=2)
-print(f"✅ Feature list saved → {features_path}")
+print(f"✅ Features saved  → {features_path}")
 
-print("\n🏆 Success! Feature engineering, training, and model persistence completed.")
+meta = {
+    'model_name':      best_name,
+    'cv_accuracy':     round(best_cv, 4),
+    'test_accuracy':   round(xgb_test_acc if best_name == 'XGBoost' else rf_test_acc, 4),
+    'rf_cv_mean':      round(rf_cv_mean, 4),
+    'xgb_cv_mean':     round(xgb_cv_mean, 4),
+    'n_features':      len(features),
+    'trained_at':      datetime.utcnow().isoformat() + 'Z'
+}
+with open(meta_path, 'w') as f:
+    json.dump(meta, f, indent=2)
+print(f"✅ Metadata saved  → {meta_path}")
+
+print("\n🏆 Success! Feature engineering, model comparison, and persistence completed.")

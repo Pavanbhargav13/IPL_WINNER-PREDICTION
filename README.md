@@ -53,12 +53,16 @@ Features are split into **venue-level** and **team-level** categories:
 
 ## 🧠 Model
 
+Two models are trained and compared using **5-Fold Stratified Cross-Validation**. The best one is automatically saved.
+
 | Property | Value |
 |---|---|
-| Algorithm | Random Forest Classifier |
+| Models compared | Random Forest vs XGBoost |
+| Selection criteria | Highest 5-Fold CV accuracy |
 | Train/Test Split | 80% / 20% |
-| Target | `1` if Home Team wins, `0` if Away Team wins |
-| Saved as | `models/ipl_rf_model.joblib` |
+| Target | `1` = Home Team wins, `0` = Away Team wins |
+| Saved model | `models/ipl_rf_model.joblib` (best of the two) |
+| Model metadata | `models/model_metadata.json` (name, accuracy, trained_at) |
 
 ---
 
@@ -151,7 +155,7 @@ Sample output:
 - [x] Random Forest model training
 - [x] Model persistence (save/load)
 - [x] Prediction script (CLI + interactive mode)
-- [ ] Model improvement (XGBoost, cross-validation, form features)
+- [x] Model improvement (XGBoost + 5-Fold CV + auto-save best model)
 - [ ] Web UI for live predictions
 
 ---
