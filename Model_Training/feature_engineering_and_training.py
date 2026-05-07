@@ -3,7 +3,7 @@ import numpy as np
 import os
 import json
 import joblib
-from datetime import datetime
+from datetime import datetime, timezone
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
@@ -275,7 +275,7 @@ meta = {
     'rf_cv_mean':      round(rf_cv_mean, 4),
     'xgb_cv_mean':     round(xgb_cv_mean, 4),
     'n_features':      len(features),
-    'trained_at':      datetime.utcnow().isoformat() + 'Z'
+    'trained_at':      datetime.now(timezone.utc).isoformat()
 }
 with open(meta_path, 'w') as f:
     json.dump(meta, f, indent=2)
