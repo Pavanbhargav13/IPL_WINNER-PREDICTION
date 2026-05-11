@@ -60,13 +60,15 @@ export default function H2HPredictor() {
   };
 
   return (
-    <div className="h2h-container">
-      <h2>⚔️ Head-to-Head Predictor</h2>
+    <div className="main-content">
+      <div className="page-header">
+        <h1 className="page-title">Head-to-Head Predictor</h1>
+      </div>
       
-      <div className="card" style={{ marginBottom: '2rem' }}>
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
+      <div className="card-dark" style={{ marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem' }}>🏠 Home Team</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>🏠 Home Team</label>
             <select 
               value={homeTeam} 
               onChange={e => setHomeTeam(e.target.value)}
@@ -77,38 +79,36 @@ export default function H2HPredictor() {
           </div>
           
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem' }}>🚌 Away Team</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>🚌 Away Team</label>
             <select 
               value={awayTeam} 
               onChange={e => setAwayTeam(e.target.value)}
-              style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'var(--navy)', color: 'white', border: '1px solid var(--text-secondary)' }}
             >
               {teams.map(t => <option key={t.abbr} value={t.abbr}>{t.full_name} ({t.abbr})</option>)}
             </select>
           </div>
           
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem' }}>📍 Venue</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>📍 Venue</label>
             <select 
               value={venue} 
               onChange={e => setVenue(e.target.value)}
-              style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'var(--navy)', color: 'white', border: '1px solid var(--text-secondary)' }}
             >
               {venues.map(v => <option key={v} value={v}>{v}</option>)}
             </select>
           </div>
           
-          <button onClick={handlePredict} disabled={loading} style={{ height: '45px', flexShrink: 0 }}>
+          <button className="btn-accent" onClick={handlePredict} disabled={loading} style={{ height: '45px', flexShrink: 0 }}>
             {loading ? 'Predicting...' : 'Predict Match'}
           </button>
         </div>
-        {error && <p className="text-rose" style={{ marginTop: '1rem' }}>{error}</p>}
+        {error && <p className="text-red" style={{ marginTop: '1rem' }}>{error}</p>}
       </div>
 
       {/* Results Section */}
       {prediction && (
         <motion.div 
-          className="card"
+          className="card-dark"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, type: 'spring' }}

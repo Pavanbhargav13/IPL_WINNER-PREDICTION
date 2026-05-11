@@ -79,27 +79,29 @@ export default function WhatIfEngine() {
   };
 
   return (
-    <div className="whatif-container">
-      <h2>🎛️ What-If Scenario Engine</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>Adjust team stats to see how win probabilities shift in real-time.</p>
+    <div className="main-content">
+      <div className="page-header">
+        <h1 className="page-title">What-If Scenario Engine</h1>
+      </div>
+      <p style={{ color: 'var(--text-muted-on-light)', marginBottom: '2rem' }}>Adjust team stats to see how win probabilities shift in real-time.</p>
 
-      <div className="card" style={{ marginBottom: '2rem' }}>
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+      <div className="card-dark" style={{ marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
           <div style={{ flex: 1 }}>
-            <label>🏠 Home Team</label>
-            <select value={homeTeam} onChange={e => setHomeTeam(e.target.value)} style={{ width: '100%', padding: '0.5rem', background: 'var(--navy)', color: 'white', marginTop: '0.5rem' }}>
+            <label style={{ color: 'var(--text-muted-on-dark)' }}>🏠 Home Team</label>
+            <select value={homeTeam} onChange={e => setHomeTeam(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {teams.map(t => <option key={t.abbr} value={t.abbr}>{t.abbr}</option>)}
             </select>
           </div>
           <div style={{ flex: 1 }}>
-            <label>🚌 Away Team</label>
-            <select value={awayTeam} onChange={e => setAwayTeam(e.target.value)} style={{ width: '100%', padding: '0.5rem', background: 'var(--navy)', color: 'white', marginTop: '0.5rem' }}>
+            <label style={{ color: 'var(--text-muted-on-dark)' }}>🚌 Away Team</label>
+            <select value={awayTeam} onChange={e => setAwayTeam(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {teams.map(t => <option key={t.abbr} value={t.abbr}>{t.abbr}</option>)}
             </select>
           </div>
           <div style={{ flex: 1 }}>
-            <label>📍 Venue</label>
-            <select value={venue} onChange={e => setVenue(e.target.value)} style={{ width: '100%', padding: '0.5rem', background: 'var(--navy)', color: 'white', marginTop: '0.5rem' }}>
+            <label style={{ color: 'var(--text-muted-on-dark)' }}>📍 Venue</label>
+            <select value={venue} onChange={e => setVenue(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {venues.map(v => <option key={v} value={v}>{v}</option>)}
             </select>
           </div>
@@ -107,7 +109,7 @@ export default function WhatIfEngine() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
-        <div className="card">
+        <div className="card-dark">
           <h3 className="text-cyan">{homeTeam} Stats</h3>
           
           <div style={{ marginTop: '1.5rem' }}>
@@ -124,8 +126,8 @@ export default function WhatIfEngine() {
           </div>
         </div>
 
-        <div className="card">
-          <h3 className="text-cyan">{awayTeam} Stats</h3>
+        <div className="card-dark">
+          <h3 className="text-accent">{awayTeam} Stats</h3>
           
           <div style={{ marginTop: '1.5rem' }}>
             <label>Batting Average ({awayBattingAvg})</label>
@@ -143,13 +145,13 @@ export default function WhatIfEngine() {
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <button onClick={resetToReal} style={{ background: 'var(--slate)', color: 'white', border: '1px solid var(--text-secondary)' }}>Reset to Real Stats</button>
+        <button onClick={resetToReal} style={{ background: 'var(--card-dark)' }}>Reset to Real Stats</button>
       </div>
 
       <AnimatePresence>
         {prediction && (
           <motion.div 
-            className="card text-center"
+            className="card-dark text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}

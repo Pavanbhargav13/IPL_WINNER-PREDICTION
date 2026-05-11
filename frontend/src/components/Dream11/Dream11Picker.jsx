@@ -79,32 +79,34 @@ export default function Dream11Picker() {
   };
 
   return (
-    <div className="dream11-container">
-      <h2>👤 Dream11 Squad Strategy</h2>
-      <p style={{ color: 'var(--text-secondary)' }}>Select 11 players to see how they perform at a specific venue.</p>
+    <div className="main-content">
+      <div className="page-header">
+        <h1 className="page-title">Dream11 Squad Strategy</h1>
+      </div>
+      <p style={{ color: 'var(--text-muted-on-light)' }}>Select 11 players to see how they perform at a specific venue.</p>
 
-      <div className="card" style={{ marginBottom: '2rem' }}>
-        <label>📍 Match Venue</label>
+      <div className="card-dark" style={{ marginBottom: '2rem' }}>
+        <label style={{ color: 'var(--text-muted-on-dark)' }}>📍 Match Venue</label>
         <select value={venue} onChange={e => setVenue(e.target.value)} style={{ width: '100%', padding: '0.5rem', background: 'var(--navy)', color: 'white', marginTop: '0.5rem', marginBottom: '1rem' }}>
           {venues.map(v => <option key={v} value={v}>{v}</option>)}
         </select>
         
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span className="text-cyan">{selectedPlayers.length}/11 Players Selected</span>
-          <button onClick={handlePredict} disabled={selectedPlayers.length !== 11 || loading}>
+          <span className="text-accent">{selectedPlayers.length}/11 Players Selected</span>
+          <button className="btn-accent" onClick={handlePredict} disabled={selectedPlayers.length !== 11 || loading}>
             {loading ? 'Analyzing Squad...' : 'Generate Strategy'}
           </button>
         </div>
       </div>
 
       {prediction && (
-        <motion.div className="card" style={{ marginBottom: '2rem', border: '1px solid var(--gold)' }} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
-          <h3 className="text-gold">🤖 Strategy Report</h3>
+        <motion.div className="card-dark" style={{ marginBottom: '2rem', border: '1px solid var(--accent-red)' }} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
+          <h3 className="text-accent">🤖 Strategy Report</h3>
           <p><strong>Pitch Intel:</strong> {prediction.pitch_type} - {prediction.strategy_narrative}</p>
           <p><strong>Captaincy Tip:</strong> {prediction.captain_tip}</p>
           <div style={{ marginTop: '1rem' }}>
             <strong>Actionable Tips:</strong>
-            <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)' }}>
+            <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-muted-on-dark)' }}>
               {prediction.tips.map((tip, i) => <li key={i} style={{ marginBottom: '0.5rem' }}>{tip}</li>)}
             </ul>
           </div>
@@ -117,11 +119,12 @@ export default function Dream11Picker() {
           return (
             <motion.div 
               key={player.id}
-              className="card"
+              className="card-dark"
               style={{ 
                 cursor: 'pointer', 
-                background: isSelected ? 'var(--navy)' : 'var(--slate)',
-                border: isSelected ? '2px solid var(--cyan)' : '1px solid rgba(255,255,255,0.05)',
+                background: isSelected ? 'var(--app-bg)' : 'var(--card-dark)',
+                color: isSelected ? 'var(--text-dark)' : 'var(--text-light)',
+                border: isSelected ? '2px solid var(--accent-red)' : '1px solid rgba(255,255,255,0.05)',
                 transformStyle: 'preserve-3d'
               }}
               whileHover={{ scale: 1.05 }}
@@ -130,9 +133,9 @@ export default function Dream11Picker() {
             >
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span style={{ fontWeight: 'bold' }}>{player.name}</span>
-                <span className="text-gold">{player.credits}</span>
+                <span className="text-accent">{player.credits}</span>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', color: isSelected ? 'var(--text-muted-on-light)' : 'var(--text-muted-on-dark)', marginTop: '0.5rem' }}>
                 <span>{player.team}</span>
                 <span>{player.role}</span>
               </div>
