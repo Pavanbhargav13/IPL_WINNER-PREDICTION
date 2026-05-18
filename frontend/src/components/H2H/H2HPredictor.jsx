@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Home, Plane, MapPin, Trophy, Landmark, Lightbulb } from 'lucide-react';
 
 const API_BASE = 'http://localhost:8000/api';
 
@@ -68,7 +69,7 @@ export default function H2HPredictor() {
       <div className="card-dark" style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>🏠 Home Team</label>
+            <label className="field-label"><Home size={14} /> Home Team</label>
             <select 
               value={homeTeam} 
               onChange={e => setHomeTeam(e.target.value)}
@@ -79,7 +80,7 @@ export default function H2HPredictor() {
           </div>
           
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>🚌 Away Team</label>
+            <label className="field-label"><Plane size={14} /> Away Team</label>
             <select 
               value={awayTeam} 
               onChange={e => setAwayTeam(e.target.value)}
@@ -89,7 +90,7 @@ export default function H2HPredictor() {
           </div>
           
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted-on-dark)' }}>📍 Venue</label>
+            <label className="field-label"><MapPin size={14} /> Venue</label>
             <select 
               value={venue} 
               onChange={e => setVenue(e.target.value)}
@@ -119,7 +120,9 @@ export default function H2HPredictor() {
               <span style={{ fontSize: '1rem', margin: '0 1rem' }}>vs</span> 
               <span style={{ color: prediction.winner === prediction.away_team ? 'var(--gold)' : 'var(--text-secondary)' }}>{prediction.away_team}</span>
             </h3>
-            <p className="text-cyan">🏆 Winner: {prediction.winner === prediction.home_team ? prediction.home_full : prediction.away_full}</p>
+            <p className="text-cyan" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem' }}>
+              <Trophy size={16} /> Winner: {prediction.winner === prediction.home_team ? prediction.home_full : prediction.away_full}
+            </p>
           </div>
 
           {/* Animated Split Bar */}
@@ -144,14 +147,18 @@ export default function H2HPredictor() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
             <div>
-              <h4 className="text-gold">🏟️ Venue Intelligence</h4>
+              <h4 className="text-gold" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <Landmark size={16} /> Venue Intelligence
+              </h4>
               <p><strong>Pitch:</strong> {prediction.pitch_type}</p>
               <p><strong>Avg 1st Innings:</strong> {Math.round(prediction.avg_first_innings_score)}</p>
               <p><strong>Chase Win %:</strong> {prediction.chase_win_pct}%</p>
               <p><strong>Ground Size:</strong> {prediction.ground_size === 'S' ? 'Small' : prediction.ground_size === 'M' ? 'Medium' : 'Large'}</p>
             </div>
             <div>
-              <h4 className="text-gold">💡 Strategy</h4>
+              <h4 className="text-gold" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <Lightbulb size={16} /> Strategy
+              </h4>
               <p><strong>Toss Advice:</strong> {prediction.toss_advice}</p>
               <p><strong>Home Advantage:</strong> {prediction.home_advantage_modifier > 0 ? `+${prediction.home_advantage_modifier}% to ${prediction.home_team}` : 'Neutral/Negative'}</p>
               <p style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>"{prediction.venue_description}"</p>

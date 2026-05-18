@@ -1,0 +1,4867 @@
+[
+  {
+    "id": 1,
+    "name": "AB de Villiers",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 2,
+    "name": "Aakash Chopra",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.0
+  },
+  {
+    "id": 3,
+    "name": "Aaron Finch",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 4,
+    "name": "Aavishkar Salvi",
+    "role": "BOWL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 5,
+    "name": "Abdul Basith",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 6,
+    "name": "Abdul Samad",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 7,
+    "name": "Abdur Razzak",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 8,
+    "name": "Abhijeet Tomar",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 9,
+    "name": "Abhimanyu Mithun",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 10,
+    "name": "Abhinav Manohar",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 7.0
+  },
+  {
+    "id": 11,
+    "name": "Abhinav Mukund",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 12,
+    "name": "Abhishek Jhunjhunwala",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 13,
+    "name": "Abhishek Nayar",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.0
+  },
+  {
+    "id": 14,
+    "name": "Abhishek Raut",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 15,
+    "name": "Abhishek Sharma",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 16,
+    "name": "Abishek Porel",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 17,
+    "name": "Abrar Kazi",
+    "role": "BOWL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 18,
+    "name": "Abu Nechim",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 19,
+    "name": "Adam Gilchrist",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 20,
+    "name": "Adam Milne",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 21,
+    "name": "Adam Voges",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 22,
+    "name": "Adam Zampa",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 23,
+    "name": "Adil Rashid",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 24,
+    "name": "Aditya Dole",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 25,
+    "name": "Aditya Tare",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 26,
+    "name": "Adrian Barath",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 27,
+    "name": "Aiden Blizzard",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 28,
+    "name": "Aiden Markram",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 29,
+    "name": "Ajantha Mendis",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 10.0
+  },
+  {
+    "id": 30,
+    "name": "Ajinkya Rahane",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.0
+  },
+  {
+    "id": 31,
+    "name": "Ajit  Chandila",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 32,
+    "name": "Ajit Agarkar",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 33,
+    "name": "Akash Deep",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 34,
+    "name": "Akash Madhwal",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 35,
+    "name": "Akash Singh",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 36,
+    "name": "Akeal Hosein",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 37,
+    "name": "Akila Dananjaya",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 38,
+    "name": "Akshath Reddy",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 39,
+    "name": "Akshdeep Nath",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 40,
+    "name": "Albie Morkel",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 9.0
+  },
+  {
+    "id": 41,
+    "name": "Alex Carey",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 42,
+    "name": "Alex Hales",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 43,
+    "name": "Alfonso Thomas",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.0
+  },
+  {
+    "id": 44,
+    "name": "Ali Murtaza",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.0
+  },
+  {
+    "id": 45,
+    "name": "Alzarri Joseph",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 7.5
+  },
+  {
+    "id": 46,
+    "name": "Aman Hakim Khan",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 47,
+    "name": "Ambati Rayudu",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 48,
+    "name": "Amit Mishra",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 49,
+    "name": "Amit Paunikar",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 50,
+    "name": "Amit Singh",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 51,
+    "name": "Amit Uniyal",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 52,
+    "name": "Anand Rajan",
+    "role": "BOWL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 53,
+    "name": "Andre Nel",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 54,
+    "name": "Andre Russell",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.5
+  },
+  {
+    "id": 55,
+    "name": "Andrew Flintoff",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 56,
+    "name": "Andrew McDonald",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 57,
+    "name": "Andrew Symonds",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 58,
+    "name": "Andrew Tye",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 59,
+    "name": "Angelo Mathews",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 60,
+    "name": "Aniket Choudhary",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 61,
+    "name": "Anil Kumble",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 62,
+    "name": "Anirudh Singh",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 63,
+    "name": "Ankeet Chavan",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 64,
+    "name": "Ankit Bawne",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 65,
+    "name": "Ankit Rajpoot",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 66,
+    "name": "Ankit Sharma",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 9.5
+  },
+  {
+    "id": 67,
+    "name": "Ankit Soni",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 8.0
+  },
+  {
+    "id": 68,
+    "name": "Anmolpreet Singh",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 69,
+    "name": "Anrich Nortje",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 70,
+    "name": "Anuj Rawat",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 71,
+    "name": "Anukul Roy",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 72,
+    "name": "Anureet Singh",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.5
+  },
+  {
+    "id": 73,
+    "name": "Anustup Majumdar",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 10.0
+  },
+  {
+    "id": 74,
+    "name": "Arindam Ghosh",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 75,
+    "name": "Arjun Tendulkar",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 76,
+    "name": "Arjun Yadav",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 77,
+    "name": "Arshad Khan",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 78,
+    "name": "Arshdeep Singh",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 8.5
+  },
+  {
+    "id": 79,
+    "name": "Arun Karthik",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 80,
+    "name": "Asad Pathan",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 81,
+    "name": "Ashish Nehra",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 82,
+    "name": "Ashish Reddy",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 83,
+    "name": "Ashley Noffke",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 84,
+    "name": "Ashok Dinda",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 10.0
+  },
+  {
+    "id": 85,
+    "name": "Ashok Menaria",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 86,
+    "name": "Ashton Turner",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 87,
+    "name": "Atharva Taide",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 10.5
+  },
+  {
+    "id": 88,
+    "name": "Avesh Khan",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.0
+  },
+  {
+    "id": 89,
+    "name": "Axar Patel",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 90,
+    "name": "Ayush Badoni",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 7.0
+  },
+  {
+    "id": 91,
+    "name": "Azhar Bilakhia",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 92,
+    "name": "Azhar Mahmood",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 93,
+    "name": "Baba Indrajith",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 94,
+    "name": "Balachandra Akhil",
+    "role": "ALL",
+    "team": "Kochi",
+    "credits": 8.5
+  },
+  {
+    "id": 95,
+    "name": "Barinder Sran",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 96,
+    "name": "Basil Thampi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 97,
+    "name": "Ben Cutting",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 98,
+    "name": "Ben Dunk",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 99,
+    "name": "Ben Hilfenhaus",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 10.5
+  },
+  {
+    "id": 100,
+    "name": "Ben Laughlin",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 101,
+    "name": "Ben Rohrer",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 102,
+    "name": "Ben Stokes",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 103,
+    "name": "Beuran Hendricks",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.5
+  },
+  {
+    "id": 104,
+    "name": "Bhanuka Rajapaksa",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 9.0
+  },
+  {
+    "id": 105,
+    "name": "Bharat Chipli",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 106,
+    "name": "Bhargav Bhatt",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 107,
+    "name": "Bhuvneshwar Kumar",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 108,
+    "name": "Billy Stanlake",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 109,
+    "name": "Biplab Samantray",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 110,
+    "name": "Bipul Sharma",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.5
+  },
+  {
+    "id": 111,
+    "name": "Bodapati Sumanth",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 112,
+    "name": "Brad Haddin",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 113,
+    "name": "Brad Hodge",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 114,
+    "name": "Brad Hogg",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 115,
+    "name": "Brendon McCullum",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 116,
+    "name": "Brett Geeves",
+    "role": "BOWL",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 117,
+    "name": "Brett Lee",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 118,
+    "name": "Callum Ferguson",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 9.0
+  },
+  {
+    "id": 119,
+    "name": "Cameron Green",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 120,
+    "name": "Cameron White",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 121,
+    "name": "Carlos Brathwaite",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 122,
+    "name": "Chamara Kapugedera",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.0
+  },
+  {
+    "id": 123,
+    "name": "Chamara Silva",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 124,
+    "name": "Chaminda Vaas",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 125,
+    "name": "Chandan Madan",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 126,
+    "name": "Chandrasekar Ganapathy",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 127,
+    "name": "Charl Langeveldt",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 128,
+    "name": "Chetan Sakariya",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 129,
+    "name": "Chetanya Nanda",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 130,
+    "name": "Cheteshwar Pujara",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 131,
+    "name": "Chidhambaram Gautam",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 132,
+    "name": "Chris Gayle",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 7.0
+  },
+  {
+    "id": 133,
+    "name": "Chris Green",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 134,
+    "name": "Chris Jordan",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 135,
+    "name": "Chris Lynn",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 136,
+    "name": "Chris Morris",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 137,
+    "name": "Chris Woakes",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 138,
+    "name": "Clint McKay",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 139,
+    "name": "Colin Ingram",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 140,
+    "name": "Colin Munro",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 141,
+    "name": "Colin de Grandhomme",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 142,
+    "name": "Corey Anderson",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 143,
+    "name": "D'Arcy Short",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 144,
+    "name": "Dale Steyn",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 145,
+    "name": "Damien Martyn",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 146,
+    "name": "Dan Christian",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 147,
+    "name": "Daniel Christian",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 148,
+    "name": "Daniel Harris",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 149,
+    "name": "Daniel Sams",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 150,
+    "name": "Daniel Vettori",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 151,
+    "name": "Daren Sammy",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 152,
+    "name": "Darren Bravo",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 153,
+    "name": "Darren Lehmann",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 154,
+    "name": "Darshan Nalkande",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 9.0
+  },
+  {
+    "id": 155,
+    "name": "Daryl Mitchell",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 156,
+    "name": "Dasun Shanaka",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 8.0
+  },
+  {
+    "id": 157,
+    "name": "David Hussey",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 158,
+    "name": "David Miller",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 9.0
+  },
+  {
+    "id": 159,
+    "name": "David Warner",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 160,
+    "name": "David Wiese",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 161,
+    "name": "David Willey",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 162,
+    "name": "Davy Jacobs",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 163,
+    "name": "Dawid Malan",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 8.0
+  },
+  {
+    "id": 164,
+    "name": "Debabrata Das",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 165,
+    "name": "Deepak Chahar",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 10.0
+  },
+  {
+    "id": 166,
+    "name": "Deepak Hooda",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 7.0
+  },
+  {
+    "id": 167,
+    "name": "Devdutt Padikkal",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 168,
+    "name": "Devon Conway",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 169,
+    "name": "Devraj Patil",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 170,
+    "name": "Dewald Brevis",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 171,
+    "name": "Dhawal Kulkarni",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 172,
+    "name": "Dhruv Jurel",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 173,
+    "name": "Dhruv Shorey",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 174,
+    "name": "Dilhara Fernando",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 175,
+    "name": "Dillon du Preez",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 176,
+    "name": "Dimitri Mascarenhas",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 177,
+    "name": "Dinesh Karthik",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 178,
+    "name": "Dinesh Salunkhe",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 179,
+    "name": "Dirk Nannes",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 180,
+    "name": "Dishant Yagnik",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 181,
+    "name": "Doddapaneni Kalyankrishna",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 182,
+    "name": "Dominic Thornely",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 183,
+    "name": "Domnic Muthuswami",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 184,
+    "name": "Doug Bollinger",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 185,
+    "name": "Doug Bracewell",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 186,
+    "name": "Duan Jansen",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 187,
+    "name": "Dushmantha Chameera",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.0
+  },
+  {
+    "id": 188,
+    "name": "Dwaine Pretorius",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 189,
+    "name": "Dwaraka Ravi Teja",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 190,
+    "name": "Dwayne Bravo",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 191,
+    "name": "Dwayne Smith",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 8.5
+  },
+  {
+    "id": 192,
+    "name": "Eklavya Dwivedi",
+    "role": "BAT",
+    "team": "GL",
+    "credits": 8.0
+  },
+  {
+    "id": 193,
+    "name": "Eoin Morgan",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 194,
+    "name": "Evin Lewis",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 10.0
+  },
+  {
+    "id": 195,
+    "name": "Fabian Allen",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 196,
+    "name": "Faf du Plessis",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 197,
+    "name": "Faiz Fazal",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 198,
+    "name": "Farhaan Behardien",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 7.0
+  },
+  {
+    "id": 199,
+    "name": "Farveez Maharoof",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 200,
+    "name": "Fazalhaq Farooqi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 201,
+    "name": "Fidel Edwards",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.5
+  },
+  {
+    "id": 202,
+    "name": "Gagandeep Singh",
+    "role": "BOWL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 203,
+    "name": "Gautam Gambhir",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 204,
+    "name": "George Bailey",
+    "role": "BAT",
+    "team": "RPS",
+    "credits": 7.5
+  },
+  {
+    "id": 205,
+    "name": "George Garton",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 206,
+    "name": "Glenn Maxwell",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 207,
+    "name": "Glenn McGrath",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 208,
+    "name": "Glenn Phillips",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 209,
+    "name": "Gnaneswara Rao",
+    "role": "ALL",
+    "team": "Kochi",
+    "credits": 8.5
+  },
+  {
+    "id": 210,
+    "name": "Graeme Smith",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 10.5
+  },
+  {
+    "id": 211,
+    "name": "Graham Napier",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 212,
+    "name": "Gurinder Sandhu",
+    "role": "BOWL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 213,
+    "name": "Gurkeerat Singh Mann",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 214,
+    "name": "Gurnoor Brar",
+    "role": "BOWL",
+    "team": "PBKS",
+    "credits": 8.5
+  },
+  {
+    "id": 215,
+    "name": "Halhadar Das",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 10.5
+  },
+  {
+    "id": 216,
+    "name": "Hanuma Vihari",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 217,
+    "name": "Harbhajan Singh",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 218,
+    "name": "Hardik Pandya",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 9.5
+  },
+  {
+    "id": 219,
+    "name": "Hardus Viljoen",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 220,
+    "name": "Harmeet Singh",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 221,
+    "name": "Harpreet Brar",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 10.5
+  },
+  {
+    "id": 222,
+    "name": "Harpreet Singh",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 9.0
+  },
+  {
+    "id": 223,
+    "name": "Harry Brook",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 224,
+    "name": "Harry Gurney",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 225,
+    "name": "Harshal Patel",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 226,
+    "name": "Harshit Rana",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 227,
+    "name": "Hashim Amla",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 228,
+    "name": "Heinrich Klaasen",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 229,
+    "name": "Herschelle Gibbs",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 230,
+    "name": "Himanshu Sharma",
+    "role": "BOWL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 231,
+    "name": "Hrithik Shokeen",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 232,
+    "name": "Imran Tahir",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 233,
+    "name": "Iqbal Abdulla",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 234,
+    "name": "Irfan Pathan",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.5
+  },
+  {
+    "id": 235,
+    "name": "Ish Sodhi",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 236,
+    "name": "Ishan Kishan",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 237,
+    "name": "Ishan Malhotra",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 238,
+    "name": "Ishan Porel",
+    "role": "BOWL",
+    "team": "PBKS",
+    "credits": 8.0
+  },
+  {
+    "id": 239,
+    "name": "Ishank Jaggi",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 240,
+    "name": "Ishant Sharma",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 241,
+    "name": "Ishwar Pandey",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.5
+  },
+  {
+    "id": 242,
+    "name": "Isuru Udana",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 243,
+    "name": "Jacob Oram",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 244,
+    "name": "Jacques Kallis",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.5
+  },
+  {
+    "id": 245,
+    "name": "Jagadeesh Arunkumar",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 246,
+    "name": "Jagadeesha Suchith",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 247,
+    "name": "Jalaj Saxena",
+    "role": "BOWL",
+    "team": "PBKS",
+    "credits": 8.0
+  },
+  {
+    "id": 248,
+    "name": "Jamaluddin Syed Mohammad",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 249,
+    "name": "James Faulkner",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.5
+  },
+  {
+    "id": 250,
+    "name": "James Franklin",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 251,
+    "name": "James Hopes",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 252,
+    "name": "James Neesham",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 253,
+    "name": "James Pattinson",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 254,
+    "name": "Jaskaran Singh",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 255,
+    "name": "Jason Behrendorff",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 256,
+    "name": "Jason Holder",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.5
+  },
+  {
+    "id": 257,
+    "name": "Jason Roy",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 258,
+    "name": "Jasprit Bumrah",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 259,
+    "name": "Javon Searles",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 260,
+    "name": "Jayant Yadav",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 261,
+    "name": "Jaydev Unadkat",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.0
+  },
+  {
+    "id": 262,
+    "name": "Jean-Paul Duminy",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 263,
+    "name": "Jeevan Mendis",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 264,
+    "name": "Jerome Taylor",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 7.5
+  },
+  {
+    "id": 265,
+    "name": "Jesse Ryder",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 10.0
+  },
+  {
+    "id": 266,
+    "name": "Jhye Richardson",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 9.5
+  },
+  {
+    "id": 267,
+    "name": "Jitesh Sharma",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 9.0
+  },
+  {
+    "id": 268,
+    "name": "Joe Denly",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 10.5
+  },
+  {
+    "id": 269,
+    "name": "Joe Root",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 270,
+    "name": "Jofra Archer",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 271,
+    "name": "Joginder Sharma",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 10.0
+  },
+  {
+    "id": 272,
+    "name": "Johan Botha",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 273,
+    "name": "Johan van der Wath",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 274,
+    "name": "John Hastings",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 10.5
+  },
+  {
+    "id": 275,
+    "name": "Jonny Bairstow",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 7.5
+  },
+  {
+    "id": 276,
+    "name": "Jos Buttler",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 277,
+    "name": "Josh Hazlewood",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 278,
+    "name": "Josh Little",
+    "role": "BOWL",
+    "team": "GT",
+    "credits": 9.0
+  },
+  {
+    "id": 279,
+    "name": "Josh Philippe",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 280,
+    "name": "Junior Dala",
+    "role": "BOWL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 281,
+    "name": "Justin Kemp",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 282,
+    "name": "KC Cariappa",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 283,
+    "name": "KL Rahul",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 9.0
+  },
+  {
+    "id": 284,
+    "name": "KM Asif",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 285,
+    "name": "KP Appanna",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 286,
+    "name": "Kagiso Rabada",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 10.0
+  },
+  {
+    "id": 287,
+    "name": "Kamlesh Nagarkoti",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 288,
+    "name": "Kamran Akmal",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 289,
+    "name": "Kamran Khan",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 290,
+    "name": "Kane Richardson",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 291,
+    "name": "Kane Williamson",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 292,
+    "name": "Karan Goel",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.5
+  },
+  {
+    "id": 293,
+    "name": "Karan Sharma",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 9.0
+  },
+  {
+    "id": 294,
+    "name": "Karanveer Singh",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 295,
+    "name": "Karn Sharma",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 296,
+    "name": "Kartik Tyagi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 297,
+    "name": "Karun Nair",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 298,
+    "name": "Kedar Jadhav",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 299,
+    "name": "Keemo Paul",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 300,
+    "name": "Kemar Roach",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 301,
+    "name": "Kevin Pietersen",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 10.0
+  },
+  {
+    "id": 302,
+    "name": "Kevon Cooper",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 303,
+    "name": "Khaleel Ahmed",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 304,
+    "name": "Kieron Pollard",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 305,
+    "name": "Krishmar Santokie",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 306,
+    "name": "Krishnakant  Upadhyay",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 7.5
+  },
+  {
+    "id": 307,
+    "name": "Krishnappa Gowtham",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 308,
+    "name": "Krunal Pandya",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.0
+  },
+  {
+    "id": 309,
+    "name": "Kuldeep Sen",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 310,
+    "name": "Kuldeep Yadav",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 311,
+    "name": "Kuldip Yadav",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 312,
+    "name": "Kulwant Khejroliya",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 313,
+    "name": "Kumar Kartikeya",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 314,
+    "name": "Kumar Sangakkara",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 315,
+    "name": "Kusal Perera",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 316,
+    "name": "Kyle Abbott",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 317,
+    "name": "Kyle Jamieson",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 318,
+    "name": "Kyle Mayers",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.0
+  },
+  {
+    "id": 319,
+    "name": "Lakshmipathy Balaji",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 320,
+    "name": "Lalit Yadav",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 321,
+    "name": "Lasith Malinga",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 322,
+    "name": "Laxmi Shukla",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 323,
+    "name": "Lee Carseldine",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 324,
+    "name": "Lendl Simmons",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 325,
+    "name": "Liam Livingstone",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 7.0
+  },
+  {
+    "id": 326,
+    "name": "Liam Plunkett",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 327,
+    "name": "Litton Das",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 328,
+    "name": "Lockie Ferguson",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 10.5
+  },
+  {
+    "id": 329,
+    "name": "Love Ablish",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 330,
+    "name": "Luke Pomersbach",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 331,
+    "name": "Luke Ronchi",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 332,
+    "name": "Luke Wright",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.0
+  },
+  {
+    "id": 333,
+    "name": "Lukman Meriwala",
+    "role": "BOWL",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 334,
+    "name": "Lungi Ngidi",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 335,
+    "name": "M Shahrukh Khan",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 10.0
+  },
+  {
+    "id": 336,
+    "name": "MS Dhoni",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 10.0
+  },
+  {
+    "id": 337,
+    "name": "Maheesh Theekshana",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 338,
+    "name": "Mahela Jayawardene",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 339,
+    "name": "Mahesh Rawat",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 8.5
+  },
+  {
+    "id": 340,
+    "name": "Mahipal Lomror",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 341,
+    "name": "Makhaya Ntini",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 10.0
+  },
+  {
+    "id": 342,
+    "name": "Manan Vohra",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 343,
+    "name": "Mandeep Singh",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.0
+  },
+  {
+    "id": 344,
+    "name": "Manish Pandey",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 345,
+    "name": "Manoj Tiwary",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 346,
+    "name": "Manpreet Gony",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 347,
+    "name": "Manprit Juneja",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 348,
+    "name": "Manvinder  Bisla",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 349,
+    "name": "Marchant de Lange",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 350,
+    "name": "Marco Jansen",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 351,
+    "name": "Marcus Stoinis",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.5
+  },
+  {
+    "id": 352,
+    "name": "Mark Boucher",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 353,
+    "name": "Mark Wood",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.5
+  },
+  {
+    "id": 354,
+    "name": "Marlon Samuels",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 355,
+    "name": "Martin Guptill",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 10.5
+  },
+  {
+    "id": 356,
+    "name": "Mashrafe Mortaza",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 357,
+    "name": "Matheesha Pathirana",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 10.5
+  },
+  {
+    "id": 358,
+    "name": "Matt Henry",
+    "role": "BOWL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 359,
+    "name": "Matthew Hayden",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 360,
+    "name": "Matthew Short",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 8.5
+  },
+  {
+    "id": 361,
+    "name": "Matthew Wade",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 9.5
+  },
+  {
+    "id": 362,
+    "name": "Mayank Agarwal",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 363,
+    "name": "Mayank Dagar",
+    "role": "BOWL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 364,
+    "name": "Mayank Markande",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 365,
+    "name": "Michael Bracewell",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 366,
+    "name": "Michael Clarke",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 9.0
+  },
+  {
+    "id": 367,
+    "name": "Michael Hussey",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 368,
+    "name": "Michael Klinger",
+    "role": "BAT",
+    "team": "Kochi",
+    "credits": 9.5
+  },
+  {
+    "id": 369,
+    "name": "Michael Lumb",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 370,
+    "name": "Michael Neser",
+    "role": "BOWL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 371,
+    "name": "Misbah-ul-Haq",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 372,
+    "name": "Mitchell Johnson",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 373,
+    "name": "Mitchell Marsh",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 374,
+    "name": "Mitchell McClenaghan",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 375,
+    "name": "Mitchell Santner",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 376,
+    "name": "Mitchell Starc",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 377,
+    "name": "Mithun Manhas",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 378,
+    "name": "Moeen Ali",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 379,
+    "name": "Mohammad Ashraful",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 380,
+    "name": "Mohammad Asif",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 381,
+    "name": "Mohammad Hafeez",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 382,
+    "name": "Mohammad Kaif",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 383,
+    "name": "Mohammad Nabi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 384,
+    "name": "Mohammed Shami",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 8.5
+  },
+  {
+    "id": 385,
+    "name": "Mohammed Siraj",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 386,
+    "name": "Mohit Rathee",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 8.0
+  },
+  {
+    "id": 387,
+    "name": "Mohit Sharma",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 7.5
+  },
+  {
+    "id": 388,
+    "name": "Mohnish  Mishra",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 8.5
+  },
+  {
+    "id": 389,
+    "name": "Mohnish Parmar",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 10.5
+  },
+  {
+    "id": 390,
+    "name": "Mohsin Khan",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.5
+  },
+  {
+    "id": 391,
+    "name": "Moises Henriques",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 10.0
+  },
+  {
+    "id": 392,
+    "name": "Monu Kumar",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 9.0
+  },
+  {
+    "id": 393,
+    "name": "Morne Morkel",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 394,
+    "name": "Morne van Wyk",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 395,
+    "name": "Mujeeb Ur Rahman",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.0
+  },
+  {
+    "id": 396,
+    "name": "Mukesh Choudhary",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 397,
+    "name": "Mukesh Kumar",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 398,
+    "name": "Munaf Patel",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.0
+  },
+  {
+    "id": 399,
+    "name": "Murali Kartik",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 400,
+    "name": "Murali Vijay",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 401,
+    "name": "Murugan Ashwin",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 402,
+    "name": "Musavir Khote",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 403,
+    "name": "Mustafizur Rahman",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 404,
+    "name": "Muttiah Muralitharan",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 405,
+    "name": "Naman Ojha",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 10.0
+  },
+  {
+    "id": 406,
+    "name": "Narayan Jagadeesan",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 407,
+    "name": "Nathan Coulter-Nile",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 408,
+    "name": "Nathan Ellis",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 9.0
+  },
+  {
+    "id": 409,
+    "name": "Nathan McCullum",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 9.0
+  },
+  {
+    "id": 410,
+    "name": "Nathan Rimmington",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 411,
+    "name": "Nathu Singh",
+    "role": "BOWL",
+    "team": "GL",
+    "credits": 10.0
+  },
+  {
+    "id": 412,
+    "name": "Navdeep Saini",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 413,
+    "name": "Naveen-ul-Haq",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.5
+  },
+  {
+    "id": 414,
+    "name": "Nayan Doshi",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 415,
+    "name": "Nehal Wadhera",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 416,
+    "name": "Nic Maddinson",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 7.0
+  },
+  {
+    "id": 417,
+    "name": "Nicholas Pooran",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 418,
+    "name": "Nikhil Naik",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 419,
+    "name": "Niraj Patel",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 420,
+    "name": "Nitin Saini",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 421,
+    "name": "Nitish Kumar Reddy",
+    "role": "BOWL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 422,
+    "name": "Nitish Rana",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 423,
+    "name": "Noor Ahmad",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 7.5
+  },
+  {
+    "id": 424,
+    "name": "Nuwan Kulasekara",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 425,
+    "name": "Nuwan Zoysa",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 426,
+    "name": "Obed McCoy",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 427,
+    "name": "Odean Smith",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 9.5
+  },
+  {
+    "id": 428,
+    "name": "Oshane Thomas",
+    "role": "BOWL",
+    "team": "RR",
+    "credits": 7.0
+  },
+  {
+    "id": 429,
+    "name": "Owais Shah",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 430,
+    "name": "PM Sarvesh Kumar",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 431,
+    "name": "Padmanabhan Prasanth",
+    "role": "BOWL",
+    "team": "Kochi",
+    "credits": 7.5
+  },
+  {
+    "id": 432,
+    "name": "Paidikalva Vijaykumar",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 433,
+    "name": "Palani  Amarnath",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 434,
+    "name": "Pankaj Singh",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 435,
+    "name": "Paras Dogra",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 436,
+    "name": "Pardeep Sahu",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 7.0
+  },
+  {
+    "id": 437,
+    "name": "Parthiv Patel",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 438,
+    "name": "Parvez Rasool",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 439,
+    "name": "Parvinder Awana",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.5
+  },
+  {
+    "id": 440,
+    "name": "Pat Cummins",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 441,
+    "name": "Paul Collingwood",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 442,
+    "name": "Paul Valthaty",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.5
+  },
+  {
+    "id": 443,
+    "name": "Pawan Negi",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 444,
+    "name": "Pawan Suyal",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 445,
+    "name": "Peter Handscomb",
+    "role": "BAT",
+    "team": "RPS",
+    "credits": 10.0
+  },
+  {
+    "id": 446,
+    "name": "Phil Salt",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 447,
+    "name": "Pinal Shah",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 448,
+    "name": "Piyush Chawla",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 449,
+    "name": "Prabhsimran Singh",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 10.0
+  },
+  {
+    "id": 450,
+    "name": "Pradeep Sangwan",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 9.0
+  },
+  {
+    "id": 451,
+    "name": "Pragyan Ojha",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 452,
+    "name": "Prasanth Parameswaran",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 453,
+    "name": "Prashant Chopra",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 454,
+    "name": "Prashant Solanki",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 455,
+    "name": "Prasidh Krishna",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 456,
+    "name": "Praveen Dubey",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 457,
+    "name": "Praveen Kumar",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.5
+  },
+  {
+    "id": 458,
+    "name": "Pravin Tambe",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.0
+  },
+  {
+    "id": 459,
+    "name": "Prayas Ray Barman",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 460,
+    "name": "Prerak Mankad",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 461,
+    "name": "Prithvi Raj",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 462,
+    "name": "Prithvi Shaw",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 463,
+    "name": "Priyam Garg",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 464,
+    "name": "Quinton de Kock",
+    "role": "BAT",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 465,
+    "name": "RP Singh",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 466,
+    "name": "Raghav Goyal",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 7.5
+  },
+  {
+    "id": 467,
+    "name": "Rahil Shaikh",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 468,
+    "name": "Rahmanullah Gurbaz",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 469,
+    "name": "Rahul Chahar",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 9.5
+  },
+  {
+    "id": 470,
+    "name": "Rahul Dravid",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 7.0
+  },
+  {
+    "id": 471,
+    "name": "Rahul Sharma",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.5
+  },
+  {
+    "id": 472,
+    "name": "Rahul Shukla",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 473,
+    "name": "Rahul Tewatia",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 8.5
+  },
+  {
+    "id": 474,
+    "name": "Rahul Tripathi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 475,
+    "name": "Raiphi Gomez",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 8.5
+  },
+  {
+    "id": 476,
+    "name": "Rajagopal Sathish",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 477,
+    "name": "Rajat Bhatia",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 9.0
+  },
+  {
+    "id": 478,
+    "name": "Rajat Patidar",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 479,
+    "name": "Rajesh Bishnoi",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 10.0
+  },
+  {
+    "id": 480,
+    "name": "Raju Bhatkal",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 481,
+    "name": "Rajvardhan Hangargekar",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 482,
+    "name": "Raj\u00a0Bawa",
+    "role": "BAT",
+    "team": "PBKS",
+    "credits": 7.0
+  },
+  {
+    "id": 483,
+    "name": "Ramandeep Singh",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 484,
+    "name": "Ramesh Powar",
+    "role": "ALL",
+    "team": "Kochi",
+    "credits": 9.5
+  },
+  {
+    "id": 485,
+    "name": "Ramnaresh Sarwan",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 486,
+    "name": "Ranadeb Bose",
+    "role": "BOWL",
+    "team": "KXIP",
+    "credits": 10.5
+  },
+  {
+    "id": 487,
+    "name": "Rashid Khan",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 8.5
+  },
+  {
+    "id": 488,
+    "name": "Rasikh Salam",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 489,
+    "name": "Rassie van der Dussen",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 490,
+    "name": "Ravi Bishnoi",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.0
+  },
+  {
+    "id": 491,
+    "name": "Ravi Bopara",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 492,
+    "name": "Ravi Rampaul",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 493,
+    "name": "Ravichandran Ashwin",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 494,
+    "name": "Ravindra Jadeja",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 7.0
+  },
+  {
+    "id": 495,
+    "name": "Ravisrinivasan Sai Kishore",
+    "role": "BOWL",
+    "team": "GT",
+    "credits": 8.0
+  },
+  {
+    "id": 496,
+    "name": "Ray Price",
+    "role": "BOWL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 497,
+    "name": "Reece Topley",
+    "role": "BOWL",
+    "team": "RCB",
+    "credits": 8.5
+  },
+  {
+    "id": 498,
+    "name": "Reetinder Sodhi",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 499,
+    "name": "Richard Levi",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 500,
+    "name": "Ricky Bhui",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 501,
+    "name": "Ricky Ponting",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 9.0
+  },
+  {
+    "id": 502,
+    "name": "Rilee Rossouw",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 503,
+    "name": "Riley Meredith",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 504,
+    "name": "Rinku Singh",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 505,
+    "name": "Ripal Patel",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 506,
+    "name": "Rishabh Pant",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 507,
+    "name": "Rishi Dhawan",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 7.5
+  },
+  {
+    "id": 508,
+    "name": "Riyan Parag",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 509,
+    "name": "Rob Quiney",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 7.0
+  },
+  {
+    "id": 510,
+    "name": "Robin Peterson",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 511,
+    "name": "Robin Uthappa",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 512,
+    "name": "Roelof van der Merwe",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 513,
+    "name": "Rohan Gavaskar",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 514,
+    "name": "Rohan Raje",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 515,
+    "name": "Rohit Sharma",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 516,
+    "name": "Romario Shepherd",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 10.0
+  },
+  {
+    "id": 517,
+    "name": "Ronit More",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 518,
+    "name": "Ross Taylor",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 519,
+    "name": "Rovman Powell",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 520,
+    "name": "Rusty Theron",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 521,
+    "name": "Ruturaj Gaikwad",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 10.5
+  },
+  {
+    "id": 522,
+    "name": "Ryan Harris",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 523,
+    "name": "Ryan McLaren",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 524,
+    "name": "Ryan Ninan",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 525,
+    "name": "Ryan ten Doeschate",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 526,
+    "name": "S Badrinath",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 527,
+    "name": "Sachin Baby",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 528,
+    "name": "Sachin Rana",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 529,
+    "name": "Sachin Tendulkar",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 530,
+    "name": "Sachithra Senanayake",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 531,
+    "name": "Sai Sudharsan",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 7.5
+  },
+  {
+    "id": 532,
+    "name": "Salman Butt",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 533,
+    "name": "Sam Billings",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 534,
+    "name": "Sam Curran",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 8.0
+  },
+  {
+    "id": 535,
+    "name": "Samuel Badree",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 536,
+    "name": "Sanath Jayasuriya",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 537,
+    "name": "Sandeep Lamichhane",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 538,
+    "name": "Sandeep Sharma",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 539,
+    "name": "Sandeep Warrier",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 540,
+    "name": "Sanjay Bangar",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 541,
+    "name": "Sanjay Yadav",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 542,
+    "name": "Sanju Samson",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 10.5
+  },
+  {
+    "id": 543,
+    "name": "Sanvir Singh",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 544,
+    "name": "Sarabjit Ladda",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 7.0
+  },
+  {
+    "id": 545,
+    "name": "Sarfaraz Khan",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 546,
+    "name": "Saurabh Tiwary",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 547,
+    "name": "Scott Boland",
+    "role": "BOWL",
+    "team": "RPS",
+    "credits": 10.5
+  },
+  {
+    "id": 548,
+    "name": "Scott Kuggeleijn",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 549,
+    "name": "Scott Styris",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 550,
+    "name": "Sean Abbott",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 551,
+    "name": "Shadab Jakati",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 9.5
+  },
+  {
+    "id": 552,
+    "name": "Shahbaz Ahmed",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 553,
+    "name": "Shahbaz Nadeem",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 554,
+    "name": "Shahid Afridi",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 555,
+    "name": "Shakib Al Hasan",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 556,
+    "name": "Shalabh Srivastava",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 557,
+    "name": "Shane Bond",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 558,
+    "name": "Shane Harwood",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.5
+  },
+  {
+    "id": 559,
+    "name": "Shane Warne",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 560,
+    "name": "Shane Watson",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.0
+  },
+  {
+    "id": 561,
+    "name": "Shardul Thakur",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 562,
+    "name": "Shashank Singh",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 563,
+    "name": "Shaun Marsh",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 564,
+    "name": "Shaun Pollock",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 565,
+    "name": "Shaun Tait",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 566,
+    "name": "Sheldon Cottrell",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 567,
+    "name": "Sheldon Jackson",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 568,
+    "name": "Sherfane Rutherford",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 569,
+    "name": "Shikhar Dhawan",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 9.0
+  },
+  {
+    "id": 570,
+    "name": "Shimron Hetmyer",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 571,
+    "name": "Shivam Dube",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 572,
+    "name": "Shivam Mavi",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 573,
+    "name": "Shivam Sharma",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.5
+  },
+  {
+    "id": 574,
+    "name": "Shivil Kaushik",
+    "role": "ALL",
+    "team": "GL",
+    "credits": 10.5
+  },
+  {
+    "id": 575,
+    "name": "Shivnarine Chanderpaul",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 576,
+    "name": "Shoaib Ahmed",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.0
+  },
+  {
+    "id": 577,
+    "name": "Shoaib Akhtar",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 9.0
+  },
+  {
+    "id": 578,
+    "name": "Shoaib Malik",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 579,
+    "name": "Shoaib Shaikh",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 580,
+    "name": "Shreevats Goswami",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 581,
+    "name": "Shreyas Gopal",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 582,
+    "name": "Shreyas Iyer",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 583,
+    "name": "Shrikant Mundhe",
+    "role": "BOWL",
+    "team": "PWI",
+    "credits": 10.0
+  },
+  {
+    "id": 584,
+    "name": "Shrikant Wagh",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 7.5
+  },
+  {
+    "id": 585,
+    "name": "Shubham Agarwal",
+    "role": "BOWL",
+    "team": "GL",
+    "credits": 10.0
+  },
+  {
+    "id": 586,
+    "name": "Shubman Gill",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 8.0
+  },
+  {
+    "id": 587,
+    "name": "Siddarth Kaul",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 588,
+    "name": "Siddharth Chitnis",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 589,
+    "name": "Siddharth Trivedi",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 590,
+    "name": "Siddhesh Lad",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 591,
+    "name": "Sikandar Raza",
+    "role": "ALL",
+    "team": "PBKS",
+    "credits": 10.0
+  },
+  {
+    "id": 592,
+    "name": "Simarjeet Singh",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 593,
+    "name": "Simon Katich",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 594,
+    "name": "Sisanda Magala",
+    "role": "BOWL",
+    "team": "CSK",
+    "credits": 10.0
+  },
+  {
+    "id": 595,
+    "name": "Sohail Tanvir",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 596,
+    "name": "Sourav Ganguly",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 10.0
+  },
+  {
+    "id": 597,
+    "name": "Sourav Sarkar",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 598,
+    "name": "Sreenath Aravind",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 599,
+    "name": "Sreesanth",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.0
+  },
+  {
+    "id": 600,
+    "name": "Sridharan Sriram",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.5
+  },
+  {
+    "id": 601,
+    "name": "Srikar Bharat",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 602,
+    "name": "Srikkanth Anirudha",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.5
+  },
+  {
+    "id": 603,
+    "name": "Stephen Fleming",
+    "role": "BAT",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 604,
+    "name": "Steven Smith",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 605,
+    "name": "Stuart Binny",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 606,
+    "name": "Sudeep Tyagi",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.5
+  },
+  {
+    "id": 607,
+    "name": "Sudhesan Midhun",
+    "role": "BOWL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 608,
+    "name": "Sumit Narwal",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 609,
+    "name": "Sunil Joshi",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 610,
+    "name": "Sunil Narine",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 611,
+    "name": "Sunny Gupta",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.5
+  },
+  {
+    "id": 612,
+    "name": "Sunny Singh",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 8.0
+  },
+  {
+    "id": 613,
+    "name": "Sunny Sohal",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 614,
+    "name": "Suraj Randiv",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 615,
+    "name": "Suresh Raina",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.0
+  },
+  {
+    "id": 616,
+    "name": "Suryakumar Yadav",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 8.5
+  },
+  {
+    "id": 617,
+    "name": "Suyash Prabhudessai",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 618,
+    "name": "Suyash Sharma",
+    "role": "BOWL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 619,
+    "name": "Swapnil Asnodkar",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 9.5
+  },
+  {
+    "id": 620,
+    "name": "Swapnil Singh",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 8.0
+  },
+  {
+    "id": 621,
+    "name": "T Natarajan",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 622,
+    "name": "TP Sudhindra",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 623,
+    "name": "Tabraiz Shamsi",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 624,
+    "name": "Tanmay Srivastava",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 625,
+    "name": "Taruwar Kohli",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 9.0
+  },
+  {
+    "id": 626,
+    "name": "Tatenda Taibu",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 9.5
+  },
+  {
+    "id": 627,
+    "name": "Tejas Baroka",
+    "role": "BOWL",
+    "team": "GL",
+    "credits": 7.5
+  },
+  {
+    "id": 628,
+    "name": "Thalaivan Sargunam",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 8.0
+  },
+  {
+    "id": 629,
+    "name": "Thilan Thushara",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 8.5
+  },
+  {
+    "id": 630,
+    "name": "Thisara Perera",
+    "role": "ALL",
+    "team": "RPS",
+    "credits": 9.5
+  },
+  {
+    "id": 631,
+    "name": "Tilak Varma",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.5
+  },
+  {
+    "id": 632,
+    "name": "Tillakaratne Dilshan",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 633,
+    "name": "Tim David",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 8.0
+  },
+  {
+    "id": 634,
+    "name": "Tim Paine",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 7.5
+  },
+  {
+    "id": 635,
+    "name": "Tim Seifert",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 636,
+    "name": "Tim Southee",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 637,
+    "name": "Tirumalasetti Suman",
+    "role": "ALL",
+    "team": "PWI",
+    "credits": 7.5
+  },
+  {
+    "id": 638,
+    "name": "Tom Banton",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.0
+  },
+  {
+    "id": 639,
+    "name": "Tom Curran",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 640,
+    "name": "Travis Birt",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 8.0
+  },
+  {
+    "id": 641,
+    "name": "Travis Head",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 642,
+    "name": "Trent Boult",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 643,
+    "name": "Tristan Stubbs",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 644,
+    "name": "Tushar Deshpande",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 7.5
+  },
+  {
+    "id": 645,
+    "name": "Tymal Mills",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 646,
+    "name": "Tyron Henderson",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 647,
+    "name": "Uday Kaul",
+    "role": "BAT",
+    "team": "KXIP",
+    "credits": 10.0
+  },
+  {
+    "id": 648,
+    "name": "Udit Birla",
+    "role": "BAT",
+    "team": "PWI",
+    "credits": 9.0
+  },
+  {
+    "id": 649,
+    "name": "Umar Gul",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 650,
+    "name": "Umesh Yadav",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.5
+  },
+  {
+    "id": 651,
+    "name": "Umran Malik",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 652,
+    "name": "Unmukt Chand",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 7.0
+  },
+  {
+    "id": 653,
+    "name": "Usman Khawaja",
+    "role": "BAT",
+    "team": "RPS",
+    "credits": 10.5
+  },
+  {
+    "id": 654,
+    "name": "VVS Laxman",
+    "role": "BAT",
+    "team": "Kochi",
+    "credits": 8.5
+  },
+  {
+    "id": 655,
+    "name": "Vaibhav Arora",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 10.0
+  },
+  {
+    "id": 656,
+    "name": "Varun Aaron",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 8.5
+  },
+  {
+    "id": 657,
+    "name": "Varun Chakravarthy",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.5
+  },
+  {
+    "id": 658,
+    "name": "Veer Pratap Singh",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 659,
+    "name": "Venkatesh Iyer",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 7.0
+  },
+  {
+    "id": 660,
+    "name": "Venugopal Rao",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 7.5
+  },
+  {
+    "id": 661,
+    "name": "Vidyut Sivaramakrishnan",
+    "role": "ALL",
+    "team": "CSK",
+    "credits": 9.0
+  },
+  {
+    "id": 662,
+    "name": "Vijay Shankar",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 8.0
+  },
+  {
+    "id": 663,
+    "name": "Vijay Zol",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 664,
+    "name": "Vijaykumar Vyshak",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 7.5
+  },
+  {
+    "id": 665,
+    "name": "Vikram Singh",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.5
+  },
+  {
+    "id": 666,
+    "name": "Vikramjeet Malik",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 9.0
+  },
+  {
+    "id": 667,
+    "name": "Vikrant Yeligati",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 668,
+    "name": "Vinay Kumar",
+    "role": "ALL",
+    "team": "KKR",
+    "credits": 8.0
+  },
+  {
+    "id": 669,
+    "name": "Virat Kohli",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 670,
+    "name": "Virat Singh",
+    "role": "BAT",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 671,
+    "name": "Virender Sehwag",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 8.5
+  },
+  {
+    "id": 672,
+    "name": "Vishnu Vinod",
+    "role": "BAT",
+    "team": "MI",
+    "credits": 10.0
+  },
+  {
+    "id": 673,
+    "name": "Vivrant Sharma",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 10.5
+  },
+  {
+    "id": 674,
+    "name": "Wanindu Hasaranga",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 675,
+    "name": "Wanindu Hasaranga de Silva",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 9.0
+  },
+  {
+    "id": 676,
+    "name": "Washington Sundar",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 9.0
+  },
+  {
+    "id": 677,
+    "name": "Wasim Jaffer",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 9.5
+  },
+  {
+    "id": 678,
+    "name": "Wayne Parnell",
+    "role": "ALL",
+    "team": "RCB",
+    "credits": 10.5
+  },
+  {
+    "id": 679,
+    "name": "Wilkin Mota",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 7.5
+  },
+  {
+    "id": 680,
+    "name": "Wriddhiman Saha",
+    "role": "BAT",
+    "team": "GT",
+    "credits": 7.5
+  },
+  {
+    "id": 681,
+    "name": "Yash Dayal",
+    "role": "ALL",
+    "team": "GT",
+    "credits": 9.5
+  },
+  {
+    "id": 682,
+    "name": "Yash Dhull",
+    "role": "BAT",
+    "team": "DC",
+    "credits": 7.5
+  },
+  {
+    "id": 683,
+    "name": "Yash Thakur",
+    "role": "BOWL",
+    "team": "LSG",
+    "credits": 7.5
+  },
+  {
+    "id": 684,
+    "name": "Yashasvi Jaiswal",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 7.5
+  },
+  {
+    "id": 685,
+    "name": "Yashpal Singh",
+    "role": "BAT",
+    "team": "KKR",
+    "credits": 7.0
+  },
+  {
+    "id": 686,
+    "name": "Yo Mahesh",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 8.5
+  },
+  {
+    "id": 687,
+    "name": "Yogesh Nagar",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 9.0
+  },
+  {
+    "id": 688,
+    "name": "Yogesh Takawale",
+    "role": "BAT",
+    "team": "RCB",
+    "credits": 8.0
+  },
+  {
+    "id": 689,
+    "name": "Younis Khan",
+    "role": "BAT",
+    "team": "RR",
+    "credits": 8.0
+  },
+  {
+    "id": 690,
+    "name": "Yudhvir Singh",
+    "role": "ALL",
+    "team": "LSG",
+    "credits": 9.5
+  },
+  {
+    "id": 691,
+    "name": "Yusuf Abdulla",
+    "role": "ALL",
+    "team": "KXIP",
+    "credits": 9.5
+  },
+  {
+    "id": 692,
+    "name": "Yusuf Pathan",
+    "role": "ALL",
+    "team": "SRH",
+    "credits": 8.5
+  },
+  {
+    "id": 693,
+    "name": "Yuvraj Singh",
+    "role": "ALL",
+    "team": "MI",
+    "credits": 9.5
+  },
+  {
+    "id": 694,
+    "name": "Yuzvendra Chahal",
+    "role": "ALL",
+    "team": "RR",
+    "credits": 10.0
+  },
+  {
+    "id": 695,
+    "name": "Zaheer Khan",
+    "role": "ALL",
+    "team": "DC",
+    "credits": 10.0
+  }
+]

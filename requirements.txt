@@ -5,3 +5,7 @@ matplotlib
 seaborn
 joblib
 xgboost
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Home, Plane, MapPin, RotateCcw } from 'lucide-react';
 
 const API_BASE = 'http://localhost:8000/api';
 
@@ -88,19 +89,19 @@ export default function WhatIfEngine() {
       <div className="card-dark" style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
           <div style={{ flex: 1 }}>
-            <label style={{ color: 'var(--text-muted-on-dark)' }}>🏠 Home Team</label>
+            <label className="field-label"><Home size={14} /> Home Team</label>
             <select value={homeTeam} onChange={e => setHomeTeam(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {teams.map(t => <option key={t.abbr} value={t.abbr}>{t.abbr}</option>)}
             </select>
           </div>
           <div style={{ flex: 1 }}>
-            <label style={{ color: 'var(--text-muted-on-dark)' }}>🚌 Away Team</label>
+            <label className="field-label"><Plane size={14} /> Away Team</label>
             <select value={awayTeam} onChange={e => setAwayTeam(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {teams.map(t => <option key={t.abbr} value={t.abbr}>{t.abbr}</option>)}
             </select>
           </div>
           <div style={{ flex: 1 }}>
-            <label style={{ color: 'var(--text-muted-on-dark)' }}>📍 Venue</label>
+            <label className="field-label"><MapPin size={14} /> Venue</label>
             <select value={venue} onChange={e => setVenue(e.target.value)} style={{ marginTop: '0.5rem' }}>
               {venues.map(v => <option key={v} value={v}>{v}</option>)}
             </select>
@@ -112,40 +113,42 @@ export default function WhatIfEngine() {
         <div className="card-dark">
           <h3 className="text-cyan">{homeTeam} Stats</h3>
           
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Batting Average ({homeBattingAvg})</label>
-            <input type="range" min="20" max="60" step="1" value={homeBattingAvg} onChange={e => setHomeBattingAvg(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Batting Average <span className="slider-value">{homeBattingAvg}</span></label>
+            <input type="range" min="20" max="60" step="1" value={homeBattingAvg} onChange={e => setHomeBattingAvg(Number(e.target.value))} />
           </div>
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Economy Rate ({homeEconomyRate})</label>
-            <input type="range" min="6.0" max="12.0" step="0.1" value={homeEconomyRate} onChange={e => setHomeEconomyRate(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Economy Rate <span className="slider-value">{homeEconomyRate}</span></label>
+            <input type="range" min="6.0" max="12.0" step="0.1" value={homeEconomyRate} onChange={e => setHomeEconomyRate(Number(e.target.value))} />
           </div>
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Net Run Rate (NRR) ({homeNrr})</label>
-            <input type="range" min="-1.5" max="1.5" step="0.1" value={homeNrr} onChange={e => setHomeNrr(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Net Run Rate (NRR) <span className="slider-value">{homeNrr}</span></label>
+            <input type="range" min="-1.5" max="1.5" step="0.1" value={homeNrr} onChange={e => setHomeNrr(Number(e.target.value))} />
           </div>
         </div>
 
         <div className="card-dark">
           <h3 className="text-accent">{awayTeam} Stats</h3>
           
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Batting Average ({awayBattingAvg})</label>
-            <input type="range" min="20" max="60" step="1" value={awayBattingAvg} onChange={e => setAwayBattingAvg(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Batting Average <span className="slider-value">{awayBattingAvg}</span></label>
+            <input type="range" min="20" max="60" step="1" value={awayBattingAvg} onChange={e => setAwayBattingAvg(Number(e.target.value))} />
           </div>
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Economy Rate ({awayEconomyRate})</label>
-            <input type="range" min="6.0" max="12.0" step="0.1" value={awayEconomyRate} onChange={e => setAwayEconomyRate(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Economy Rate <span className="slider-value">{awayEconomyRate}</span></label>
+            <input type="range" min="6.0" max="12.0" step="0.1" value={awayEconomyRate} onChange={e => setAwayEconomyRate(Number(e.target.value))} />
           </div>
-          <div style={{ marginTop: '1.5rem' }}>
-            <label>Net Run Rate (NRR) ({awayNrr})</label>
-            <input type="range" min="-1.5" max="1.5" step="0.1" value={awayNrr} onChange={e => setAwayNrr(Number(e.target.value))} style={{ width: '100%', marginTop: '0.5rem' }} />
+          <div className="slider-group">
+            <label className="slider-label">Net Run Rate (NRR) <span className="slider-value">{awayNrr}</span></label>
+            <input type="range" min="-1.5" max="1.5" step="0.1" value={awayNrr} onChange={e => setAwayNrr(Number(e.target.value))} />
           </div>
         </div>
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <button onClick={resetToReal} style={{ background: 'var(--card-dark)' }}>Reset to Real Stats</button>
+        <button onClick={resetToReal} style={{ background: 'var(--card-dark)' }}>
+          <RotateCcw size={14} /> Reset to Real Stats
+        </button>
       </div>
 
       <AnimatePresence>
