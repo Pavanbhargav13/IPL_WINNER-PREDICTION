@@ -14,13 +14,14 @@ Endpoints:
     GET  /api/health            → Health check
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
+import httpx
 
 from backend.predictor import IPLPredictor, TEAM_ALIASES, TEAM_FULL_NAMES, TEAM_COLORS
-from backend.schemas import H2HRequest, WhatIfRequest, Dream11Request
+from backend.schemas import H2HRequest, WhatIfRequest, Dream11Request, EmailReportRequest
 
 # ── Logging ────────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO)
@@ -187,6 +188,35 @@ def predict_dream11(req: Dream11Request):
     except Exception as e:
         logger.error(f"Dream11 prediction error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# ── Email Report (n8n Automation) ───────────────────────────────────────────────
+async def trigger_n8n_webhook(email: str, report_data: dict):
+    """Background task to trigger n8n webhook for sending an email."""
+    webhook_url = "http://localhost:5678/webhook/ipl-report" # Default local n8n URL
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(webhook_url, json={
+                "email": email,
+                "report": report_data
+            }, timeout=10.0)
+            if resp.status_code == 200:
+                logger.info(f"✅ Successfully triggered n8n webhook for {email}")
+            else:
+                logger.error(f"❌ n8n webhook failed with status {resp.status_code}: {resp.text}")
+    except httpx.RequestError as e:
+        logger.warning(f"⚠️ Could not reach n8n webhook at {webhook_url}. Is n8n running? Error: {e}")
+        # Not failing the main request since this is a background task
+
+@app.post("/api/email/report", tags=["Automation"])
+async def send_email_report(req: EmailReportRequest, background_tasks: BackgroundTasks):
+    """
+    Queue a background task to send the prediction report via email using n8n.
+    Returns immediately so the frontend UI doesn't hang.
+    """
+    logger.info(f"Queueing email report for {req.email}")
+    background_tasks.add_task(trigger_n8n_webhook, req.email, req.report_data)
+    return {"message": f"Email queued for {req.email}", "status": "success"}
 
 
 # ── Root ───────────────────────────────────────────────────────────────────────
