@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MapPin, Search, BrainCircuit, Mail, Send, CheckCircle2, Star, Crown } from 'lucide-react';
+import { MapPin, Search, BrainCircuit, Mail, Send, CheckCircle2, Star, Crown, Flame, Target, Zap } from 'lucide-react';
 import AnimatedNumber from '../AnimatedNumber';
 import PLAYER_POOL from '../../data/players.json';
 
@@ -32,15 +32,70 @@ function getFormDots(id, credits) {
 
 const DOT_COLOR = { green: '#4ADE80', amber: '#FBBF24', red: '#F87171' };
 
+const TEAM_COLORS = {
+  CSK: "#FFD700",
+  MI: "#004BA0",
+  RCB: "#EC1C24",
+  KKR: "#3A225D",
+  SRH: "#FF8225",
+  GT: "#1B365D",
+  RR: "#FF69B4",
+  LSG: "#00A2E8",
+  PBKS: "#ED1B24",
+  DC: "#134285"
+};
+
 /* ── Individual Player Card (3D flip) ─────────────────────────────────────── */
 function PlayerCard({ player, isSelected, isCaptain, isViceCaptain, onToggle, onSetCaptain, onSetViceCaptain, showResult }) {
   const roleConfig = ROLE_CONFIG[player.role] || ROLE_CONFIG.BAT;
   const formDots   = useMemo(() => getFormDots(player.id, player.credits), [player.id, player.credits]);
+  
+  const teamColor = TEAM_COLORS[player.team] || '#FF6915';
+  const lastName = player.name.split(' ').pop().toUpperCase();
+  const firstName = player.name.split(' ')[0].toUpperCase();
+
+  // Generate hot streak score based on green form dots
+  const hotStreakScore = formDots.filter(d => d === 'green').length * 20 + 20;
 
   const handleCardClick = (e) => {
-    // Don't toggle if clicking C/VC buttons
     if (e.target.closest('.role-action-btn')) return;
     onToggle(player.id);
+  };
+
+  const getPlayerSilhouette = (role, color) => {
+    if (role === 'BAT') {
+      return (
+        <svg viewBox="0 0 100 100" style={{ width: '100%', height: '100%', opacity: 0.85 }}>
+          <circle cx="50" cy="22" r="8" fill={color} />
+          <path d="M42,32 L58,32 L54,75 L46,75 Z" fill={color} />
+          <path d="M42,32 L22,48 L27,53 L45,38 Z" fill={color} />
+          <path d="M58,32 L78,48 L73,53 L55,38 Z" fill={color} />
+          {/* Bat */}
+          <rect x="74" y="20" width="6" height="35" rx="1" fill={color} transform="rotate(35, 74, 20)" />
+        </svg>
+      );
+    } else if (role === 'BOWL') {
+      return (
+        <svg viewBox="0 0 100 100" style={{ width: '100%', height: '100%', opacity: 0.85 }}>
+          <circle cx="60" cy="20" r="8" fill={color} />
+          <path d="M45,30 L55,30 L50,75 L45,75 Z" fill={color} />
+          {/* Bowling arm high up */}
+          <path d="M55,30 Q40,10 50,0 L58,5 Q48,15 60,30 Z" fill={color} />
+          {/* Ball */}
+          <circle cx="48" cy="2" r="3.5" fill="#FFF" />
+        </svg>
+      );
+    } else {
+      // Wicket Keeper / All Rounder
+      return (
+        <svg viewBox="0 0 100 100" style={{ width: '100%', height: '100%', opacity: 0.85 }}>
+          <circle cx="50" cy="20" r="8" fill={color} />
+          <path d="M40,30 L60,30 L55,75 L45,75 Z" fill={color} />
+          <path d="M40,30 L25,50 L30,55 L43,35 Z" fill={color} />
+          <path d="M60,30 L75,50 L70,55 L57,35 Z" fill={color} />
+        </svg>
+      );
+    }
   };
 
   return (
@@ -51,43 +106,121 @@ function PlayerCard({ player, isSelected, isCaptain, isViceCaptain, onToggle, on
     >
       <div className={`flip-card-inner ${isSelected ? 'is-flipped' : ''}`}>
 
-        {/* ── FRONT FACE ── */}
-        <div className="flip-card-front">
-          {/* Team color strip */}
-          <div className="flip-card-strip" style={{ background: roleConfig.color }} />
+        {/* ── FRONT FACE (Premium Trading Card) ── */}
+        <div className="flip-card-front" style={{ background: '#0F100D', border: `1px solid ${teamColor}33`, overflow: 'hidden', padding: 0 }}>
+          
+          {/* Team Color Top Accent */}
+          <div style={{ height: '5px', background: teamColor, width: '100%' }} />
 
-          {/* Role badge */}
-          <div className="flip-card-role" style={{ color: roleConfig.color, background: roleConfig.bg }}>
-            {roleConfig.label}
+          {/* Large Background Typography (Last Name) */}
+          <div style={{
+            position: 'absolute', top: '10%', left: '5%', width: '90%',
+            fontSize: '2.5rem', fontWeight: '950', color: `${teamColor}0b`,
+            textTransform: 'uppercase', fontStyle: 'italic', pointerEvents: 'none',
+            lineHeight: 1, zIndex: 1, wordBreak: 'break-all'
+          }}>
+            {lastName}
           </div>
 
-          <div className="flip-card-body">
-            <div className="flip-card-name">{player.name}</div>
-            <div className="flip-card-team">{player.team}</div>
+          {/* Player Silhouette (AI/Illustration cutout effect) */}
+          <div style={{
+            position: 'absolute', top: '25%', left: '10%', width: '80%', height: '50%',
+            zIndex: 2, display: 'flex', alignItems: 'center', justifyContent: 'center'
+          }}>
+            {getPlayerSilhouette(player.role, teamColor)}
+          </div>
 
-            {/* Form dots */}
-            <div className="flip-card-form">
+          {/* Top Left Team Badge */}
+          <div style={{
+            position: 'absolute', top: '15px', left: '15px',
+            fontFamily: 'var(--font-mono)', fontSize: '0.75rem', fontWeight: '900',
+            color: '#FFFBF4', background: `${teamColor}33`, padding: '0.2rem 0.5rem',
+            borderRadius: '6px', border: `1px solid ${teamColor}55`, zIndex: 3
+          }}>
+            {player.team}
+          </div>
+
+          {/* Circle Overlay Badges (Stats & Role) */}
+          <div style={{
+            position: 'absolute', right: '12px', top: '15px',
+            display: 'flex', flexDirection: 'column', gap: '0.4rem', zIndex: 3
+          }}>
+            {/* Role Icon */}
+            <div 
+              title={`Role: ${player.role}`}
+              style={{
+                width: '26px', height: '26px', borderRadius: '50%',
+                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: roleConfig.color
+              }}
+            >
+              <Target size={12} />
+            </div>
+
+            {/* Form Heat/Flame Icon */}
+            <div 
+              title={`Form Rating: ${hotStreakScore}%`}
+              style={{
+                width: '26px', height: '26px', borderRadius: '50%',
+                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FF6915'
+              }}
+            >
+              <Flame size={12} />
+            </div>
+
+            {/* Credits Icon */}
+            <div 
+              title={`Credits: ${player.credits}`}
+              style={{
+                width: '26px', height: '26px', borderRadius: '50%',
+                background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FBBF24'
+              }}
+            >
+              <Zap size={12} />
+            </div>
+          </div>
+
+          {/* Footer Info Area */}
+          <div style={{
+            position: 'absolute', bottom: 0, left: 0, width: '100%',
+            padding: '1.25rem 1.25rem 1rem', background: 'linear-gradient(0deg, #070805 60%, transparent 100%)',
+            zIndex: 4
+          }}>
+            <div style={{ fontSize: '0.62rem', fontWeight: '800', color: `${teamColor}`, letterSpacing: '0.1em' }}>
+              {firstName}
+            </div>
+            <div style={{ fontSize: '0.95rem', fontWeight: '900', color: '#FFFBF4', lineHeight: 1.1, margin: '2px 0 6px' }}>
+              {player.name}
+            </div>
+            
+            {/* Form Dots */}
+            <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}>
               {formDots.map((dot, i) => (
                 <span
                   key={i}
-                  className="form-dot"
-                  style={{ background: DOT_COLOR[dot], boxShadow: `0 0 4px ${DOT_COLOR[dot]}88` }}
+                  style={{
+                    width: '6px', height: '6px', borderRadius: '50%',
+                    background: DOT_COLOR[dot], boxShadow: `0 0 4px ${DOT_COLOR[dot]}88`
+                  }}
                 />
               ))}
+              <span style={{ fontSize: '0.65rem', color: '#888', marginLeft: 'auto', fontFamily: 'var(--font-mono)', fontWeight: '700' }}>
+                {player.credits} CR
+              </span>
             </div>
-
-            {/* Credits */}
-            <div className="flip-card-credits">{player.credits} cr</div>
           </div>
+
         </div>
 
         {/* ── BACK FACE (selected state) ── */}
-        <div className="flip-card-back">
+        <div className="flip-card-back" style={{ background: '#0F100D', border: `2px solid ${teamColor}` }}>
           {/* Glow orb */}
-          <div className="flip-card-glow" style={{ background: `radial-gradient(circle, ${roleConfig.color}44, transparent 70%)` }} />
+          <div className="flip-card-glow" style={{ background: `radial-gradient(circle, ${teamColor}33, transparent 70%)` }} />
 
           <div className="flip-card-back-name">{player.name}</div>
-          <div className="flip-card-back-team" style={{ color: roleConfig.color }}>{player.team}</div>
+          <div className="flip-card-back-team" style={{ color: teamColor }}>{player.team}</div>
 
           {/* Captain / Vice-Captain buttons */}
           <div className="flip-card-actions">

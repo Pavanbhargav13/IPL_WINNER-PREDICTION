@@ -409,7 +409,7 @@ input[type="range"]::-moz-range-thumb {
 /* ── 3D Flip Card (F04) ─────────────────────────────────────────────────── */
 .flip-card {
   width: 100%;
-  height: 180px; /* 140×180 per spec */
+  height: 240px; /* Adjusted from 180px for premium trading card aspect ratio */
   perspective: 700px;
   cursor: pointer;
   position: relative;
@@ -1037,6 +1037,196 @@ input[type="range"]::-moz-range-thumb {
   background: var(--team-accent);
   display: inline-block;
   margin: 0 0.8rem;
+}
+
+/* ==========================================================================
+   BUTTER-SMOOTH STACKED QUIZ CAROUSEL (Light Theme / Frosted Glass)
+   ========================================================================== */
+
+.quiz-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at 50% 50%, #171813 0%, #0B0C0A 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Interactive Background Accents */
+.quiz-bg-glow {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 105, 21, 0.05) 0%, transparent 70%);
+  top: -10vw;
+  right: -10vw;
+  pointer-events: none;
+}
+
+.quiz-card-stack-wrapper {
+  position: relative;
+  width: 420px;
+  height: 500px;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-card-white {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 26, 21, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 28px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.quiz-intro-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #FF6915;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.quiz-intro-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #FFFBF4;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.quiz-intro-sub {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #D8CFBC;
+  margin-bottom: 2rem;
+}
+
+/* Options */
+.quiz-white-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 1.1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: #FFFBF4;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-white-option:hover {
+  background: rgba(255, 105, 21, 0.08);
+  border-color: rgba(255, 105, 21, 0.3);
+  transform: translateX(5px);
+}
+
+.quiz-white-option.selected {
+  background: #FF6915;
+  border-color: #FF6915;
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(255, 105, 21, 0.35);
+}
+
+.quiz-white-option-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-right: 0.8rem;
+  flex-shrink: 0;
+  color: #FFFBF4;
+}
+
+.quiz-white-option.selected .quiz-white-option-letter {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFF;
+}
+
+.quiz-white-option-text {
+  flex: 1;
+}
+
+/* Nav Controls */
+.quiz-white-cta {
+  background: #FF6915;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: auto;
+  transition: all 0.25s;
+}
+
+.quiz-white-cta:hover {
+  background: #FF8235;
+  box-shadow: 0 10px 25px rgba(255, 105, 21, 0.35);
+}
+
+.quiz-white-cta.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.quiz-white-back {
+  background: none;
+  border: none;
+  color: #D8CFBC;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  align-self: flex-start;
+  padding: 0;
+}
+
+.quiz-white-back:hover {
+  color: #FF6915;
+}
+
+.quiz-white-progress {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #FF6915;
+  margin-bottom: 0.5rem;
 }
 
 

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ArrowLeft } from 'lucide-react';
+import { ChevronRight, ArrowLeft, Sparkles } from 'lucide-react';
 import { useTheme, TEAM_THEMES } from '../../context/ThemeContext';
 
-/* ── Quiz Data ───────────────────────────────────────────────────────────── */
 const QUESTIONS = [
   {
     id: 1,
@@ -74,7 +73,6 @@ const QUESTIONS = [
   },
 ];
 
-/* ── Scoring Algorithm ───────────────────────────────────────────────────── */
 function computeTeam(answers) {
   const totals = {};
   Object.keys(TEAM_THEMES).forEach(t => { totals[t] = 0; });
@@ -86,44 +84,30 @@ function computeTeam(answers) {
   return Object.entries(totals).sort((a, b) => b[1] - a[1])[0][0];
 }
 
-/* ── Question slide variants ─────────────────────────────────────────────── */
-const slideVariants = {
-  enter: { x: 80, opacity: 0 },
-  center: { x: 0,  opacity: 1 },
-  exit:  { x: -80, opacity: 0 },
-};
-
-/* ── Main Component ──────────────────────────────────────────────────────── */
 export default function OnboardingQuiz() {
-  const navigate           = useNavigate();
-  const { chooseTeam }     = useTheme();
+  const navigate = useNavigate();
+  const { chooseTeam } = useTheme();
 
-  const [step, setStep]    = useState(0);          // 0 = intro, 1–6 = questions, 7 = result
-  const [answers, setAnswers] = useState([]);       // array of score objects
-  const [selected, setSelected] = useState(null);  // index of chosen option
+  const [step, setStep] = useState(0); // 0 = intro, 1..6 = quiz questions, 7 = result
+  const [answers, setAnswers] = useState([]);
+  const [selected, setSelected] = useState(null);
   const [resultTeam, setResultTeam] = useState(null);
 
-  const qIndex   = step - 1;                        // 0-based question index
-  const question = QUESTIONS[qIndex];
-  const progress = step === 0 ? 0 : (step / QUESTIONS.length) * 100;
-
-  /* ── Handlers ──────────────────────────────────────────────────────────── */
   const handleStart = () => setStep(1);
 
-  const handleSelect = (optionIndex) => {
-    setSelected(optionIndex);
+  const handleSelectOption = (qIdx, optIdx) => {
+    setSelected(optIdx);
   };
 
   const handleNext = () => {
     if (selected === null) return;
-    const newAnswers = [...answers, question.options[selected].scores];
+    const newAnswers = [...answers, QUESTIONS[step - 1].options[selected].scores];
     setAnswers(newAnswers);
     setSelected(null);
 
     if (step < QUESTIONS.length) {
       setStep(step + 1);
     } else {
-      // Compute result
       const team = computeTeam(newAnswers);
       setResultTeam(team);
       chooseTeam(team);
@@ -141,189 +125,165 @@ export default function OnboardingQuiz() {
 
   const handleEnterApp = () => navigate('/app');
 
-  /* ── Render ────────────────────────────────────────────────────────────── */
   return (
-    <div className="quiz-root">
+    <div className="quiz-carousel-container">
+      <div className="quiz-bg-glow" />
 
-      {/* Progress bar */}
-      {step > 0 && step <= QUESTIONS.length && (
-        <div className="quiz-progress-bar">
-          <motion.div
-            className="quiz-progress-fill"
-            animate={{ width: `${progress}%` }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          />
-        </div>
-      )}
-
-      <AnimatePresence mode="wait">
-
-        {/* ── INTRO ── */}
-        {step === 0 && (
-          <motion.div
-            key="intro"
-            className="quiz-screen"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="quiz-intro-label">TEAM SELECTION</div>
-            <h1 className="quiz-intro-title">What's your<br />cricket DNA?</h1>
-            <p className="quiz-intro-sub">
-              Answer 6 questions. We'll reveal your IPL team —
-              <br />and tailor the entire app to your colors.
-            </p>
-            <div className="quiz-intro-dots">
-              {QUESTIONS.map((_, i) => (
-                <div key={i} className="quiz-intro-dot" />
-              ))}
-            </div>
-            <motion.button
-              className="quiz-cta"
-              onClick={handleStart}
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
+      <div className="quiz-card-stack-wrapper">
+        <AnimatePresence mode="popLayout">
+          
+          {/* INTRO SCREEN */}
+          {step === 0 && (
+            <motion.div
+              key="intro"
+              className="quiz-card-white"
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, x: -300, rotate: -10 }}
+              transition={{ type: "spring", stiffness: 260, damping: 25 }}
             >
-              Begin <ChevronRight size={18} />
-            </motion.button>
-            <button className="quiz-skip" onClick={() => navigate('/app')}>
-              Skip — go to predictions
-            </button>
-          </motion.div>
-        )}
-
-        {/* ── QUESTIONS ── */}
-        {step >= 1 && step <= QUESTIONS.length && (
-          <motion.div
-            key={`q-${step}`}
-            className="quiz-screen"
-            variants={slideVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-          >
-            {/* Back button */}
-            {step > 1 && (
-              <button className="quiz-back" onClick={handleBack}>
-                <ArrowLeft size={16} /> Back
+              <div className="quiz-intro-label">TEAM SELECTION</div>
+              <h1 className="quiz-intro-title">What's your cricket DNA?</h1>
+              <p className="quiz-intro-sub">
+                Answer 6 questions to configure your custom app branding, color theme, and analytics defaults.
+              </p>
+              
+              <button className="quiz-white-cta" onClick={handleStart}>
+                Begin DNA Configuration <ChevronRight size={18} />
               </button>
-            )}
-
-            {/* Step counter */}
-            <div className="quiz-step-count">
-              {step} / {QUESTIONS.length}
-            </div>
-
-            <div className="quiz-subtitle">{question.subtitle}</div>
-            <h2 className="quiz-question">{question.question}</h2>
-
-            <div className="quiz-options">
-              {question.options.map((opt, i) => (
-                <motion.button
-                  key={i}
-                  className={`quiz-option ${selected === i ? 'quiz-option--selected' : ''}`}
-                  onClick={() => handleSelect(i)}
-                  whileHover={{ x: 6 }}
-                  whileTap={{ scale: 0.98 }}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.07 }}
-                >
-                  <span className="quiz-option-letter">
-                    {String.fromCharCode(65 + i)}
-                  </span>
-                  <span className="quiz-option-text">{opt.text}</span>
-                  {selected === i && (
-                    <motion.div
-                      className="quiz-option-tick"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: 'spring', stiffness: 400 }}
-                    >✓</motion.div>
-                  )}
-                </motion.button>
-              ))}
-            </div>
-
-            <motion.button
-              className={`quiz-cta ${selected === null ? 'quiz-cta--disabled' : ''}`}
-              onClick={handleNext}
-              disabled={selected === null}
-              whileHover={selected !== null ? { scale: 1.03 } : {}}
-              whileTap={selected !== null ? { scale: 0.97 } : {}}
-            >
-              {step === QUESTIONS.length ? 'Reveal My Team' : 'Next'}
-              <ChevronRight size={18} />
-            </motion.button>
-          </motion.div>
-        )}
-
-        {/* ── RESULT ── */}
-        {step === QUESTIONS.length + 1 && resultTeam && (
-          <motion.div
-            key="result"
-            className="quiz-screen quiz-result"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {/* Color flood from center */}
-            <motion.div
-              className="result-flood"
-              style={{ background: TEAM_THEMES[resultTeam]?.accent }}
-              initial={{ scale: 0, opacity: 0.8, borderRadius: '50%' }}
-              animate={{ scale: 20, opacity: 0 }}
-              transition={{ duration: 1.4, ease: 'easeOut' }}
-            />
-
-            <div className="result-label">YOUR TEAM IS</div>
-
-            <motion.div
-              className="result-team-abbr"
-              style={{ color: TEAM_THEMES[resultTeam]?.accent }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-            >
-              {resultTeam}
+              <button 
+                className="quiz-white-back" 
+                onClick={() => navigate('/app')} 
+                style={{ marginTop: '1.5rem', alignSelf: 'center' }}
+              >
+                Skip configuration
+              </button>
             </motion.div>
+          )}
 
+          {/* QUESTIONS STACK */}
+          {step >= 1 && step <= QUESTIONS.length && (
+            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+              {QUESTIONS.map((q, idx) => {
+                const qNum = idx + 1;
+                // Only render the current card and the one immediately behind it for performance
+                if (qNum < step || qNum > step + 2) return null;
+
+                const isCurrent = qNum === step;
+                const offset = qNum - step; // 0 for current, 1 for behind, 2 for further behind
+
+                return (
+                  <motion.div
+                    key={q.id}
+                    className="quiz-card-white"
+                    style={{
+                      position: 'absolute',
+                      top: 0, left: 0,
+                      pointerEvents: isCurrent ? 'auto' : 'none'
+                    }}
+                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                    animate={{
+                      y: offset * 15,
+                      scale: 1 - offset * 0.04,
+                      opacity: 1 - offset * 0.35,
+                      zIndex: 100 - offset
+                    }}
+                    exit={isCurrent ? { x: -500, rotate: -15, opacity: 0 } : undefined}
+                    transition={{ type: "spring", stiffness: 300, damping: 28 }}
+                  >
+                    {/* Back control */}
+                    {isCurrent && (
+                      <button className="quiz-white-back" onClick={handleBack}>
+                        <ArrowLeft size={14} /> Back
+                      </button>
+                    )}
+
+                    <div className="quiz-white-progress">
+                      QUESTION {qNum} OF {QUESTIONS.length}
+                    </div>
+                    <div style={{ fontSize: '0.82rem', color: '#8A8A85', fontWeight: '600', marginBottom: '0.2rem' }}>
+                      {q.subtitle}
+                    </div>
+                    <h2 style={{ fontSize: '1.45rem', fontWeight: '900', color: '#FFFBF4', margin: '0 0 1.25rem', letterSpacing: '-0.02em', lineHeight: '1.25' }}>
+                      {q.question}
+                    </h2>
+
+                    <div className="quiz-options" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      {q.options.map((opt, optIdx) => {
+                        const isSelected = isCurrent && selected === optIdx;
+                        return (
+                          <button
+                            key={optIdx}
+                            className={`quiz-white-option ${isSelected ? 'selected' : ''}`}
+                            onClick={() => isCurrent && handleSelectOption(idx, optIdx)}
+                          >
+                            <span className="quiz-white-option-letter">
+                              {String.fromCharCode(65 + optIdx)}
+                            </span>
+                            <span className="quiz-white-option-text">{opt.text}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {isCurrent && (
+                      <button 
+                        className={`quiz-white-cta ${selected === null ? 'disabled' : ''}`} 
+                        onClick={handleNext}
+                        disabled={selected === null}
+                      >
+                        {qNum === QUESTIONS.length ? 'Reveal My Team' : 'Next'} <ChevronRight size={18} />
+                      </button>
+                    )}
+                  </motion.div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* RESULT SCREEN */}
+          {step === QUESTIONS.length + 1 && resultTeam && (
             <motion.div
-              className="result-team-name"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              key="result"
+              className="quiz-card-white"
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ type: "spring", stiffness: 260, damping: 25 }}
+              style={{ textAlign: 'center', justifyContent: 'center' }}
             >
-              {TEAM_THEMES[resultTeam]?.name}
+              <div className="quiz-intro-label">QUIZ COMPLETE</div>
+              <div style={{ fontSize: '0.95rem', color: '#D8CFBC', fontWeight: '700' }}>YOUR MATCHED TEAM IS</div>
+              
+              <motion.div 
+                style={{ 
+                  fontSize: '4.5rem', fontWeight: '950', 
+                  color: TEAM_THEMES[resultTeam]?.accent,
+                  margin: '1rem 0 0.5rem'
+                }}
+                initial={{ scale: 0.5 }}
+                animate={{ scale: 1 }}
+                transition={{ type: "spring", stiffness: 350, damping: 15 }}
+              >
+                {resultTeam}
+              </motion.div>
+
+              <h2 style={{ fontSize: '1.6rem', fontWeight: '900', color: '#FFFBF4', margin: '0 0 1.5rem' }}>
+                {TEAM_THEMES[resultTeam]?.name}
+              </h2>
+
+              <p style={{ color: '#D8CFBC', fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '2.5rem' }}>
+                The dashboard theme has been adapted to match your team's visual identity.
+              </p>
+
+              <button className="quiz-white-cta" onClick={handleEnterApp}>
+                Enter Dashboard <ChevronRight size={18} />
+              </button>
             </motion.div>
+          )}
 
-            <motion.p
-              className="result-sub"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-            >
-              The app is now tuned to your colors.
-              <br />Your prediction engine awaits.
-            </motion.p>
-
-            <motion.button
-              className="quiz-cta"
-              onClick={handleEnterApp}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 }}
-              whileHover={{ scale: 1.04 }}
-              style={{ borderColor: TEAM_THEMES[resultTeam]?.accent, color: TEAM_THEMES[resultTeam]?.accent }}
-            >
-              Enter the Prediction Engine <ChevronRight size={18} />
-            </motion.button>
-          </motion.div>
-        )}
-
-      </AnimatePresence>
+        </AnimatePresence>
+      </div>
     </div>
   );
 }
